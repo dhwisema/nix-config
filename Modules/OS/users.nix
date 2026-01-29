@@ -55,6 +55,7 @@
       extraGroups = if role == "server" then[
         "networkmanager"
         "wheel"
+        "tty"
       ] else ["networkmanager" "wheel" "plugdev"];
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester"
