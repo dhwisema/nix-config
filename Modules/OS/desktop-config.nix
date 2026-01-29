@@ -20,9 +20,6 @@ services.avahi = {
 };
   hardware.bluetooth.enable = true;
   services.flatpak.enable = true;
-  programs.weylus.enable = true;
-  programs.weylus.openFirewall = true;
-  programs.weylus.users = ["${username}"];
   programs.zoxide.enable = true;
   programs.zoxide.enableFishIntegration = true;
   environment.systemPackages = with pkgs; [
