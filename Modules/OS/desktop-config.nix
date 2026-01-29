@@ -20,7 +20,6 @@ services.avahi = {
 };
   hardware.bluetooth.enable = true;
   services.flatpak.enable = true;
-
   programs.zoxide.enable = true;
   programs.zoxide.enableFishIntegration = true;
   environment.systemPackages = with pkgs; [
