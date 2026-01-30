@@ -20,6 +20,7 @@
     nixd
     zoxide
     vicinae
+    chromium
   ];
   programs.vicinae = {
     enable = true;

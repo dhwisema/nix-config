@@ -9,7 +9,7 @@
   ./mako.nix
   ./waybar.nix
   ./swaylock.nix
-  ./rofi.nix
+    ./rofi.nix
 ];
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {
@@ -107,13 +107,13 @@
     "Mod+B".action.spawn = "firefox";
     "Mod+E".action.spawn = "nautilus";
     "Mod+Space".action.spawn = [
-      "rofi"
-      "-show"
-      "drun"
+      "vicinae"
+      "toggle"
     ];
     "Mod+Shift+Space".action.spawn = [
-      "rofi"
-      "-show"
+      "vicinae"
+      "deeplink"
+      "vicinae://extensions/knoopx/niri/windows"
     ];
     "Mod+alt+L".action.spawn = [
       "swaylock"

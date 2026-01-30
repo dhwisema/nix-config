@@ -111,6 +111,13 @@
            font-size: 12px;
            margin: 0em 0em;
                 }
+      #window {
+        background: @base01;
+        color: @base0D;
+        border-radius: .25em;
+        margin: .5em .25em;
+        
+      }
       window#waybar {
         background: @base00;
         color: @base0D; /*maybe base0C this is text color */
