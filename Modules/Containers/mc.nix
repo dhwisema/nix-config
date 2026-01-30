@@ -45,7 +45,7 @@
           chunky
           scalablelux
           datapack:trek
-          datapack:geophillic
+          datapack:geophilic
           datapack:mingen
           datapack:unlock-all-recipes
           datapack:enderman-grief
