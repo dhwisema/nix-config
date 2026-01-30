@@ -18,43 +18,50 @@
 
       environment = {
         RCON_CMDS_STARTUP = ''
+          chunky radius 2000
+          chunky start
 '';
       RCON_CMDS_ON_CONNECT =  ''
+        chunky pause
      '';
       RCON_CMDS_LAST_DISCONNECT = ''
+        chunky continue
      '';
         EULA = "TRUE";
         TYPE = "FABRIC";
         PLUGINS = ''
-            https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric
-          '';
+                     '';
+      SEED = "8796151973292232186";
+        VANILLATWEAKS_SHARECODE = "Xa3ASF";
         MODRINTH_PROJECTS = ''
           lithium
           carpet
           fabric-api
           ferrite-core
           clumps
-          shulker-drops-two
           phantom-spawning
           view-distance-fix
           noisiumforked
-          floodgate
           chunky
-          structurify
           scalablelux
-          mes-moogs-end-structures
-          moogs-voyager-structures
-          mns-moogs-nether-structures
-          mss-moogs-soaring-structures
-          mtr-moogs-temples-reimagined
-          datapack:dungeons-and-taverns
-          datapack:dnt-enchant-disabler
-          datapack:explorify
-          datapack:terralith
-          datapack:incendium
-                          '';
+          datapack:trek
+          datapack:geophillic
+          datapack:mingen
+          datapack:unlock-all-recipes
+          datapack:enderman-grief
+          dungeons-and-taverns
+          dungeons-and-taverns-ancient-city-overhaul
+          dungeons-and-taverns-stronghold-overhaul
+          dungeons-and-taverns-pillager-outpost-overhaul
+          dungeons-and-taverns-swamp-hut-overhaul
+          dungeons-and-taverns-woodland-mansion-overhaul
+          dungeons-and-taverns-ocean-monument-overhaul
+          dungeons-and-taverns-jungle-temple-overhaul
+          dungeons-and-taverns-desert-temple-overhaul
+          dungeons-and-taverns-nether-fortress-overhaul
+                                    '';
 
-                   VIEW_DISTANCE = "18";
+                   VIEW_DISTANCE = "16";
        OPS = ''        Huntingdog5 '';
       EXISTING_OPS_FILE = "SYNCHRONIZE";
       ENABLE_WHITELIST = "true";
