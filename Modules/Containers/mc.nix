@@ -43,6 +43,7 @@
           geyser
           floodgate
           scalablelux
+          xaeros-world-map
           datapack:trek
           datapack:geophilic
           datapack:mingen
