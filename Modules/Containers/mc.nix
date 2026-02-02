@@ -14,6 +14,7 @@
 
       ports = [
         "25565:25565"
+        "19132:19132"
       ];
 
       environment = {
@@ -43,6 +44,8 @@
           view-distance-fix
           noisiumforked
           chunky
+          geyser
+          floodgate
           scalablelux
           datapack:trek
           datapack:geophilic
