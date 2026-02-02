@@ -19,6 +19,7 @@
 
       environment = {
         RCON_CMDS_STARTUP = ''
+geyser connectiontest 129.213.163.47 19132
 '';
       RCON_CMDS_ON_CONNECT =  ''
            '';
