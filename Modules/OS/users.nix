@@ -60,6 +60,7 @@
          "plugdev"
        "dialout"];
       openssh.authorizedKeys.keys = [
+				"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHNqgtA5a1QhGLKCnDciSLlbgUmNl5KYof46nrNirLK0 root@localhost"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVkFiDUTkFwLQ3g13XgdN5ekhmNYo5whYn+JmjTvLYu huntingdog5forsteam@gmail.com" #beau
       ];
