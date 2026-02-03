@@ -21,6 +21,7 @@
     zoxide
     vicinae
     chromium
+    devenv
   ];
   programs.vicinae = {
     enable = true;
