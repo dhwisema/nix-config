@@ -12,6 +12,13 @@
     ./../Desktop/Desktop.nix
     ./../Programs/wireshark.nix
   ];
+#because i hate life and nixos doesnt have pyside 6 working correctly yay
+virtualisation.podman = {
+  enable = true;
+  dockerCompat = true;
+};
+environment.systemPackages = [ pkgs.distrobox ];
+
 
 services.avahi = {
   enable = true;
