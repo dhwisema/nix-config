@@ -17,7 +17,6 @@ virtualisation.podman = {
   enable = true;
   dockerCompat = true;
 };
-environment.systemPackages = [ pkgs.distrobox ];
 
 
 services.avahi = {
@@ -33,6 +32,7 @@ services.avahi = {
     seahorse
     udisks
     gnome-software
+    distrobox
   ];
 
   fonts.packages = with pkgs; [
