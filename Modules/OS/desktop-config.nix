@@ -33,6 +33,7 @@ services.avahi = {
     udisks
     gnome-software
     distrobox
+    distrobox-tui
   ];
 
   fonts.packages = with pkgs; [
