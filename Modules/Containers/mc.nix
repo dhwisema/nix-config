@@ -14,19 +14,17 @@
 
       ports = [
         "25565:25565"
+        "19132:19132/udp"
       ];
 
       environment = {
         RCON_CMDS_STARTUP = ''
-          chunky radius 2000
-          chunky start
+geyser connectiontest 129.213.163.47 19132
 '';
       RCON_CMDS_ON_CONNECT =  ''
-        chunky pause
-     '';
+           '';
       RCON_CMDS_LAST_DISCONNECT = ''
-        chunky continue
-     '';
+           '';
         EULA = "TRUE";
         TYPE = "FABRIC";
         PLUGINS = ''
@@ -43,9 +41,11 @@
           view-distance-fix
           noisiumforked
           chunky
+          geyser
+          floodgate
           scalablelux
           datapack:trek
-          datapack:geophillic
+          datapack:geophilic
           datapack:mingen
           datapack:unlock-all-recipes
           datapack:enderman-grief

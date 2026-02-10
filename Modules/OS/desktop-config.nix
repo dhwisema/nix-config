@@ -12,6 +12,12 @@
     ./../Desktop/Desktop.nix
     ./../Programs/wireshark.nix
   ];
+#because i hate life and nixos doesnt have pyside 6 working correctly yay
+virtualisation.podman = {
+  enable = true;
+  dockerCompat = true;
+};
+
 
 services.avahi = {
   enable = true;
@@ -26,6 +32,8 @@ services.avahi = {
     seahorse
     udisks
     gnome-software
+    distrobox
+    distrobox-tui
   ];
 
   fonts.packages = with pkgs; [
