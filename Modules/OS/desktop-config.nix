@@ -52,6 +52,7 @@ services.avahi = {
 	libxkbcommon
 	fontconfig
         libx11
+	freetype
       ]
     );
   };
