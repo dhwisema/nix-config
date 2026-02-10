@@ -50,6 +50,8 @@ services.avahi = {
         glib # libglib-2.0.so.0
         libGL
 	libxkbcommon
+	fontconfig
+
       ]
     );
   };
