@@ -57,30 +57,31 @@ services.avahi = {
       	libxcb-cursor
       	kdePackages.qtbase
       	kdePackages.qtwayland
-      	    qt3d
-    qtcharts
-    qtconnectivity
-    qtdatavis3d
-    qtdeclarative
-    qthttpserver
-    qtmultimedia
-    qtnetworkauth
-    qtquick3d
-    qtremoteobjects
-    qtscxml
-    qtsensors
-    qtspeech
-    qtsvg
-    qtwebchannel
-    qtwebsockets
-    qtwebview
-    qtpositioning
-    qtlocation
-    qtshadertools
-    qtserialport
-    qtserialbus
-    qtgraphs
-    qttools
+      	   kdePackages.qt3d
+      	
+    kdePackages.qtcharts
+    kdePackages.qtconnectivity
+    kdePackages.qtdatavis3d
+    kdePackages.qtdeclarative
+    kdePackages.qthttpserver
+    kdePackages.qtmultimedia
+    kdePackages.qtnetworkauth
+    kdePackages.qtquick3d
+    kdePackages.qtremoteobjects
+    kdePackages.qtscxml
+    kdePackages.qtsensors
+    kdePackages.qtspeech
+    kdePackages.qtsvg
+    kdePackages.qtwebchannel
+    kdePackages.qtwebsockets
+    kdePackages.qtwebview
+    kdePackages.qtpositioning
+    kdePackages.qtlocation
+    kdePackages.qtshadertools
+    kdePackages.qtserialport
+    kdePackages.qtserialbus
+    kdePackages.qtgraphs
+    kdePackages.qttools
         ]
     );
   };
