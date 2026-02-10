@@ -49,13 +49,13 @@ services.avahi = {
       with pkgs; [
         glib # libglib-2.0.so.0
         libGL
-	libxkbcommon
-	fontconfig
+      	libxkbcommon
+      	fontconfig
         libx11
-	freetype
-	dbus
-	libxcb-cursor
-	
+      	freetype
+      	dbus
+      	libxcb-cursor
+        kdePackages.qtwayland	
       ]
     );
   };
