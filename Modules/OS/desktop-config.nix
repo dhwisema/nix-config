@@ -48,6 +48,7 @@ services.avahi = {
     libraries = options.programs.nix-ld.libraries.default ++ (
       with pkgs; [
         glib # libglib-2.0.so.0
+        libGL
       ]
     );
   };
