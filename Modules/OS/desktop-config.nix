@@ -36,6 +36,7 @@ services.avahi = {
     distrobox
     distrobox-tui
     uv
+    qtcreator
   ];
 
   fonts.packages = with pkgs; [
@@ -82,7 +83,7 @@ services.avahi = {
     kdePackages.qtserialbus
     kdePackages.qtgraphs
     kdePackages.qttools
-        ]
+           ]
     );
   };
   users.users.${username}.extraGroups = [
