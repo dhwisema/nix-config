@@ -36,6 +36,7 @@ services.avahi = {
     distrobox
     distrobox-tui
     uv
+    kdePackages.qtwayland
   ];
 
   fonts.packages = with pkgs; [
@@ -55,8 +56,7 @@ services.avahi = {
       	freetype
       	dbus
       	libxcb-cursor
-        kdePackages.qtwayland	
-      ]
+        ]
     );
   };
   users.users.${username}.extraGroups = [
