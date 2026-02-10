@@ -54,6 +54,8 @@ services.avahi = {
         libx11
 	freetype
 	dbus
+	libxcb-cursor
+	
       ]
     );
   };
