@@ -49,6 +49,7 @@ services.avahi = {
       with pkgs; [
         glib # libglib-2.0.so.0
         libGL
+	libxkbcommon
       ]
     );
   };
