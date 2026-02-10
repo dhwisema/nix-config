@@ -53,6 +53,7 @@ services.avahi = {
 	fontconfig
         libx11
 	freetype
+	dbus
       ]
     );
   };
