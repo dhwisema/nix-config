@@ -35,6 +35,7 @@ services.avahi = {
     gnome-software
     distrobox
     distrobox-tui
+    uv
   ];
 
   fonts.packages = with pkgs; [
@@ -42,7 +43,7 @@ services.avahi = {
     nerd-fonts.fira-code
   ];
 
-    programs.nix-ld = {
+  programs.nix-ld = {
     enable = true;
     libraries = options.programs.nix-ld.libraries.default ++ (
       with pkgs; [
