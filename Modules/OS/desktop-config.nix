@@ -51,7 +51,7 @@ services.avahi = {
         libGL
 	libxkbcommon
 	fontconfig
-
+        libx11
       ]
     );
   };
