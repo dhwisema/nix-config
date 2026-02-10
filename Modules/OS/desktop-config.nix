@@ -4,6 +4,7 @@
   config,
   hostname,
   username,
+  options,
   ...
 }:
 {
@@ -35,6 +36,11 @@ services.avahi = {
 
     programs.nix-ld = {
     enable = true;
+    libraries = options.programs.nix-ld.libraries.default ++ (
+      with pkgs; [
+        glib # libglib-2.0.so.0
+      ]
+    );
   };
   users.users.${username}.extraGroups = [
     "video"
