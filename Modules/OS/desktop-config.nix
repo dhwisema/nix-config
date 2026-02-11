@@ -56,34 +56,7 @@ services.avahi = {
       	freetype
       	dbus
       	libxcb-cursor
-      	kdePackages.qtbase
-      	kdePackages.qtwayland
-      	   kdePackages.qt3d
-      	
-    kdePackages.qtcharts
-    kdePackages.qtconnectivity
-    kdePackages.qtdatavis3d
-    kdePackages.qtdeclarative
-    kdePackages.qthttpserver
-    kdePackages.qtmultimedia
-    kdePackages.qtnetworkauth
-    kdePackages.qtquick3d
-    kdePackages.qtremoteobjects
-    kdePackages.qtscxml
-    kdePackages.qtsensors
-    kdePackages.qtspeech
-    kdePackages.qtsvg
-    kdePackages.qtwebchannel
-    kdePackages.qtwebsockets
-    kdePackages.qtwebview
-    kdePackages.qtpositioning
-    kdePackages.qtlocation
-    kdePackages.qtshadertools
-    kdePackages.qtserialport
-    kdePackages.qtserialbus
-    kdePackages.qtgraphs
-    kdePackages.qttools
-           ]
+        ]
     );
   };
   users.users.${username}.extraGroups = [
