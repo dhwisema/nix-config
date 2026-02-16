@@ -138,7 +138,7 @@
         Stacy-Fakename = mkNixosConfiguration {
           hostname = "Stacy-Fakename";
           system = "aarch64-linux";
-          modules = [./Modules/Containers/mc.nix ];
+          modules = [./Modules/Containers/mc.nix ./Host/Stacy-Fakename/configuration.nix ];
         }; # oracle cloud box
         Pumat = mkNixosConfiguration {
           hostname = "Pumat";
