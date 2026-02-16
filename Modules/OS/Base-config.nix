@@ -51,6 +51,7 @@
     };
     firewalld.enable = true; # firewall goodness
     tailscale.enable = true; # tailscale
+    tailscale.openFirewall = true;
   };
 
   system.stateVersion = "25.11";

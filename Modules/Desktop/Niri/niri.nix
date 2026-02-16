@@ -30,7 +30,7 @@
     inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
     libheif
     libheif.out
-
+    wl-clipboard
   ];
   hardware.brillo.enable = true;
   services.gvfs.enable = true;

@@ -4,6 +4,7 @@
   config,
   hostname,
   username,
+  options,
   ...
 }:
 {
@@ -41,8 +42,14 @@ services.avahi = {
     nerd-fonts.fira-code
   ];
 
-    programs.nix-ld = {
+  programs.nix-ld = {
     enable = true;
+    libraries = options.programs.nix-ld.libraries.default ++ (
+      with pkgs; [
+        glib # libglib-2.0.so.0
+        libGL
+        ]
+    );
   };
   users.users.${username}.extraGroups = [
     "video"
