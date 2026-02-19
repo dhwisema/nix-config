@@ -16,7 +16,6 @@
     obsidian
     nixd
     zoxide
-    vicinae
     chromium
     devenv
   ];
