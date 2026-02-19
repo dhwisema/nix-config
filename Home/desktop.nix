@@ -17,21 +17,6 @@
       shell-integration-features = true;
     };
   };
-  programs.vicinae = {
-    enable = true;
-    systemd.enable = true;
-    systemd.autoStart = true;
-    settings = {
-      theme = {
-        light = {
-          name = "stylix";
-        };
-        dark = {
-          name = "stylix";
-        };
-      };
-    };
-  };
   programs.fish.enable = true;
   programs.zoxide.enable = true;
   programs.zoxide.enableFishIntegration = true;
