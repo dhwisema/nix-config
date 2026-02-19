@@ -32,7 +32,7 @@
       close_on_focus_loss = true;
       favicon_service = "twenty";
       launcher_window = {
-        opacity = lib.mKforce 1;
+        opacity = lib.mkForce 1;
       };
 
       theme = {
