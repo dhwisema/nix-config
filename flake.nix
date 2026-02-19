@@ -30,6 +30,11 @@
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    vicinae.url = "github:vicinaehq/vicinae";
+    vicinae-extensions = {
+      url = "github:vicinaehq/extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     inputs:
@@ -85,7 +90,7 @@
               ]
             else
               [ ];
-          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix ];
+          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix vicinae.homeManagerModules.default ];
 
           specialArgs = {
          
