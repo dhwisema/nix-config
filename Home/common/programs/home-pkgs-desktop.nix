@@ -51,8 +51,7 @@
       nix
       niri
       firefox
-      systemd
-      wifi-commander
+           wifi-commander
       # Extension names can be found in the link below, it's just the folder namesi
       # https://github.com/vicinaehq/extensions/tree/main/extensions
 
