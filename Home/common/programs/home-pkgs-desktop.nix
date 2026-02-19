@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs,lib, ... }:
 {
 
   home.packages = with pkgs; [
@@ -32,7 +32,7 @@
       close_on_focus_loss = true;
       favicon_service = "twenty";
       launcher_window = {
-        opacity = 1;
+        opacity = lib.mkforce 1;
       };
 
       theme = {
