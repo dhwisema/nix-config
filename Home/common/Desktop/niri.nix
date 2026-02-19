@@ -99,8 +99,8 @@
     # Suggested binds for running programs: terminal, app launcher, screen locker.
     "Mod+A".action.spawn = "pavucontrol";
     "Mod+N".action.spawn = [
-      "sh"
-      "nmtui"
+      "vicinae"
+      "vicinae://extensions/dagimg-dot/wifi-commander"
     ];
     "Mod+T".action.spawn = "ghostty";
     "Mod+D".action.spawn = "vesktop";
