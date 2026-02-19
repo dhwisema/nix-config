@@ -112,8 +112,7 @@
     ];
     "Mod+Shift+Space".action.spawn = [
       "vicinae"
-      "deeplink"
-      "vicinae://extensions/knoopx/niri/windows"
+      "vicinae://extensions/vicinae/wm/switch-windows"
     ];
     "Mod+Shift+P".action.spawn = [
       "vicinae"
