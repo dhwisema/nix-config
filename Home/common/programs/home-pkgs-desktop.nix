@@ -20,8 +20,7 @@
     chromium
     devenv
   ];
-  programs.vicinae = {
-    enable = true;
+  services.vicinae = {
+    
   };
-
 }
