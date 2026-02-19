@@ -29,7 +29,7 @@
   hardware.enableRedistributableFirmware = true;
   #systemd boot enable and also set latest kernel
   boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = mkDefault pkgs.linuxPackages_latest;
     loader = {
       systemd-boot.enable = true;
       efi = {
