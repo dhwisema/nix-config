@@ -115,6 +115,10 @@
       "deeplink"
       "vicinae://extensions/knoopx/niri/windows"
     ];
+    "Mod+Shit+p".action.spawn = [
+      "vicinae"
+      "vicinae://extensions/vicinae/power"
+    ];
     "Mod+alt+L".action.spawn = [
       "swaylock"
       "--screenshot"
@@ -425,6 +429,6 @@
 
     # Powers off the monitors. To turn them back on, do any input like
     # moving the mouse or pressing any other key.
-    "Mod+Shift+P".action.power-off-monitors = { };
+    # "Mod+Shift+P".action.power-off-monitors = { };
   };
 }
