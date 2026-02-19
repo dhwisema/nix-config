@@ -115,7 +115,7 @@
       "deeplink"
       "vicinae://extensions/knoopx/niri/windows"
     ];
-    "Mod+Shit+p".action.spawn = [
+    "Mod+Shift+P".action.spawn = [
       "vicinae"
       "vicinae://extensions/vicinae/power"
     ];
