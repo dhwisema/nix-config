@@ -41,6 +41,7 @@ geyser connectiontest 129.213.163.47 19132
           view-distance-fix
           noisiumforked
           chunky
+          limitlessenchantments
           geyser
           floodgate
           scalablelux
