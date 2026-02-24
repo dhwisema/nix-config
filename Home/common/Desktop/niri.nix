@@ -9,7 +9,6 @@
   ./mako.nix
   ./waybar.nix
   ./swaylock.nix
-    ./rofi.nix
 ];
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {

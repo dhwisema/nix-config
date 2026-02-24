@@ -33,7 +33,7 @@
             format-connected =" {num_connections} connected";
             tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
             tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
-            on-click = "rofi-bluetooth";
+            on-click = "vicinae vicinae://extensions/Gelei/bluetooth/devices";
           };
 
           "niri/window" = {
