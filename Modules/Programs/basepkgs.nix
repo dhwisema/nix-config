@@ -9,12 +9,13 @@
   environment.systemPackages = with pkgs; [
     curl
     wget
-    yazi
     btop
     jq
-    zoxide
     fzf
   ];
+  programs.yazi = {
+    enable = true;
+  };
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;

@@ -8,6 +8,7 @@
   imports = [
   ./mako.nix
   ./waybar.nix
+  ./swaync.nix
   ./swaylock.nix
 ];
   #defining monitors for me niri
@@ -24,7 +25,6 @@
 
   stylix.targets.niri.enable = true;
   programs.niri.settings.spawn-at-startup = [
-    { command = [ "mako" ]; }
     { command = [ "awww-daemon" ]; }
 ];
 
