@@ -6,7 +6,6 @@
     # distrobox-tui
     # distrobox #dont need this currently will reneable if i have to use code composer again.
     vesktop
-    zellij
     ghostty
     alejandra
     kicad
@@ -20,6 +19,13 @@
     devenv
     ltspice
   ];
+ 
+  programs.zellij = {
+    enable = true;
+    settings = {
+      copy_command = "wl-copy";       
+    };
+  };
   services.vicinae = {
     enable = true;
     systemd = {
