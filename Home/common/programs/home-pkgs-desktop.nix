@@ -7,7 +7,7 @@
     # distrobox #dont need this currently will reneable if i have to use code composer again.i
     papers
     celluloid
-    calibre-no-speech
+    calibre
     vesktop
     ghostty
     alejandra
