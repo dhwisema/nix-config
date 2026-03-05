@@ -18,6 +18,10 @@
     nftables.enable = true;
     networkmanager.enable = true; # network manager default
   };
+  environment.variables = {
+    EDITOR = "hx";
+  };
+  
   #enable and make fish defaultUserShell
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;

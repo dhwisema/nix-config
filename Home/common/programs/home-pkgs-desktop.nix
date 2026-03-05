@@ -9,7 +9,6 @@
     celluloid
     calibre-no-speech
     vesktop
-    zellij
     ghostty
     alejandra
     kicad
@@ -23,6 +22,13 @@
     devenv
     ltspice
   ];
+ 
+  programs.zellij = {
+    enable = true;
+    settings = {
+      copy_command = "wl-copy";       
+    };
+  };
   services.vicinae = {
     enable = true;
     systemd = {
