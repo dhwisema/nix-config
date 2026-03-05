@@ -7,7 +7,7 @@
     # distrobox #dont need this currently will reneable if i have to use code composer again.i
     papers
     celluloid
-    calibre
+    foliate
     vesktop
     ghostty
     alejandra
