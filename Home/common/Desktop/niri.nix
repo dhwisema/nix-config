@@ -15,7 +15,7 @@
   programs.niri.settings.outputs."DP-1" = {
     position.x = 0;
     position.y = 0;
-    variable-refresh-rate = true;
+    variable-refresh-rate = false;
     # mode = "2560x1440@164.958";
   };
   programs.niri.settings.outputs."DP-2" = {
