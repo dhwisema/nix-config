@@ -21,6 +21,7 @@
     chromium
     devenv
     ltspice
+    prismlauncher
   ];
  
   programs.zellij = {
