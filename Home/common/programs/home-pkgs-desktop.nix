@@ -56,7 +56,7 @@
     };
 
     extensions = with inputs.vicinae-extensions.packages.${pkgs.stdenv.hostPlatform.system}; [
-      bluetooth
+      # bluetooth
       nix
       niri
       firefox

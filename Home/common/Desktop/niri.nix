@@ -6,7 +6,7 @@
 }:
 {
   imports = [
-  ./mako.nix
+#  ./mako.nix
   ./waybar.nix
   ./swaync.nix
   ./swaylock.nix
@@ -41,7 +41,6 @@
     default-column-width = {
       proportion = 0.5;
     };
-
     focus-ring = {
       enable = false;
       width = 4;
