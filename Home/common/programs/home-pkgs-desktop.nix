@@ -11,14 +11,13 @@
     vesktop
     ghostty
     alejandra
-    kicad
+    kicad-small
     nil
     signal-desktop
     element-desktop
     obsidian
     nixd
     zoxide
-    chromium
     devenv
     ltspice
   ];
