@@ -20,6 +20,7 @@
     zoxide
     devenv
     ltspice
+    prismlauncher
   ];
  
   programs.zellij = {
