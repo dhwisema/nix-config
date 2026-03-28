@@ -21,6 +21,7 @@
     devenv
     ltspice
     prismlauncher
+    quickshell
   ];
  
   programs.zellij = {
