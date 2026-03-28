@@ -11,7 +11,7 @@
     vesktop
     ghostty
     alejandra
-    kicad-small
+    kicad
     nil
     signal-desktop
     element-desktop
