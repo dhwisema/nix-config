@@ -89,7 +89,7 @@
               ]
             else
               [ ];
-          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix vicinae.homeManagerModules.default ];
+          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix ];
 
           specialArgs = {
          
