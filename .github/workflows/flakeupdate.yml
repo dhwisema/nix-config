@@ -17,3 +17,5 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN_FOR_UPDATES }}
       - run: nix flake check
+      - name: make pr
+        uses: peter-evans/create-pull-request@v8
