@@ -15,8 +15,6 @@
       pkgs.xdg-desktop-portal-gnome
     ];
   };
-  services.gnome.gnome-settings-daemon.enable = true;
-
   environment.systemPackages = with pkgs; [
     # sway-contrib.grimshot
     xwayland-satellite
@@ -25,32 +23,17 @@
     adwaita-icon-theme-legacy
     adwaita-icon-theme
     bluetuith
-    nautilus
     gnome-keyring
     inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
-    libheif
-    libheif.out
     wl-clipboard
+    kdePackages.qtsvg
+    kdePackages.dolphin
+    kdePackages.kio # needed since 25.11
+    kdePackages.kio-fuse #to mount remote filesystems via FUSE
+    kdePackages.kio-extras
   ];
   hardware.brillo.enable = true;
-  services.gvfs.enable = true;
-
-  nixpkgs.overlays = [
-    (final: prev: {
-      nautilus = prev.nautilus.overrideAttrs (nprev: {
-        buildInputs =
-          nprev.buildInputs
-          ++ (with pkgs.gst_all_1; [
-            gst-plugins-good
-            gst-plugins-bad
-          ]);
-      });
-    })
-  ];
   environment.pathsToLink = [ "share/thumbnailers" ];
 
   programs.niri.enable = true;
-
-  services.displayManager.gdm.enable = true;
-  services.displayManager.gdm.wayland = true;
 }
