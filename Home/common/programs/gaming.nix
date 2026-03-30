@@ -10,7 +10,6 @@
   
   home.packages = with pkgs; [
     gamemode
-    winboat
     wine
     steam-run
     steam

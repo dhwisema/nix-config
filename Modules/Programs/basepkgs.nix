@@ -12,6 +12,7 @@
     btop
     jq
     fzf
+    ripgrep
   ];
   programs.yazi = {
     enable = true;
