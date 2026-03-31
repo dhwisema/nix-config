@@ -7,7 +7,6 @@
 }:
 {
 
-  programs.niri.useNautilus = false;
   programs.dconf.enable = true;
   xdg.portal = {
     enable = true;
