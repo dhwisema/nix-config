@@ -13,6 +13,7 @@
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk
       pkgs.xdg-desktop-portal-gnome
+      pkgs.kdePackages.xdg-desktop-portal-kde
     ];
   };
   environment.systemPackages = with pkgs; [
@@ -31,8 +32,7 @@
     kdePackages.kio # needed since 25.11
     kdePackages.kio-fuse #to mount remote filesystems via FUSE
     kdePackages.kio-extras
-    kdePackages.xdg-desktop-portal-kde
-  ];
+    ];
   hardware.brillo.enable = true;
   environment.pathsToLink = [ "share/thumbnailers" ];
 
