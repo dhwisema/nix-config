@@ -15,6 +15,12 @@
       pkgs.xdg-desktop-portal-gnome
       pkgs.kdePackages.xdg-desktop-portal-kde
     ];
+    config = {
+      niri = {
+        default = [ "gtk" "gnome"];
+        "org.freedesktop.impl.portal.FileChooser" = ["kde"];
+      };
+    };
   };
   environment.systemPackages = with pkgs; [
     # sway-contrib.grimshot
