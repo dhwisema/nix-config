@@ -31,6 +31,7 @@
     kdePackages.kio # needed since 25.11
     kdePackages.kio-fuse #to mount remote filesystems via FUSE
     kdePackages.kio-extras
+    kdePackages.xdg-desktop-portal-kde
   ];
   hardware.brillo.enable = true;
   environment.pathsToLink = [ "share/thumbnailers" ];
