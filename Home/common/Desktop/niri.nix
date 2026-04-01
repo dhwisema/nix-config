@@ -5,8 +5,8 @@
 {
   imports = [
 #  ./mako.nix
-  # ./waybar.nix
-  ./dms.nix
+  ./waybar.nix
+  # ./dms.nix
   ./swaync.nix
   ./swaylock.nix
   ./niri.nix

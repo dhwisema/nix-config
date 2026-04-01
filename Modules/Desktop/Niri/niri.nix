@@ -2,11 +2,12 @@
   #only dealing with packages to install
   config,
   pkgs,
-  lib,inputs,
+  lib,
+  inputs,
   ...
 }:
 {
-
+  imports = [ ./dms.nix ];
   programs.dconf.enable = true;
   xdg.portal = {
     enable = true;
@@ -17,8 +18,11 @@
     ];
     config = {
       niri = {
-        default = [ "gtk" "gnome"];
-        "org.freedesktop.impl.portal.FileChooser" = ["kde"];
+        default = [
+          "gtk"
+          "gnome"
+        ];
+        "org.freedesktop.impl.portal.FileChooser" = [ "kde" ];
       };
     };
   };
@@ -36,9 +40,9 @@
     kdePackages.qtsvg
     kdePackages.dolphin
     kdePackages.kio # needed since 25.11
-    kdePackages.kio-fuse #to mount remote filesystems via FUSE
+    kdePackages.kio-fuse # to mount remote filesystems via FUSE
     kdePackages.kio-extras
-    ];
+  ];
   hardware.brillo.enable = true;
   environment.pathsToLink = [ "share/thumbnailers" ];
 
