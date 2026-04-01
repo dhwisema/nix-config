@@ -12,7 +12,7 @@ pkgs,
     enableAudioWavelength = false;
     settings = {
       showLauncherButton = false;
-      screenPreferences.wallpaper = ["all"];
+      screenPreferences.wallpaper = [""];
      };
   };
 }
