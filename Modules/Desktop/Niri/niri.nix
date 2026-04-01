@@ -7,7 +7,6 @@
   ...
 }:
 {
-  imports = [ ./dms.nix ];
   programs.dconf.enable = true;
   xdg.portal = {
     enable = true;
