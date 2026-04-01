@@ -19,9 +19,9 @@
     zoxide
     devenv
     ltspice
-    quickshell
+    inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell
   ];
- 
+    
   programs.zellij = {
     enable = true;
     settings = {
