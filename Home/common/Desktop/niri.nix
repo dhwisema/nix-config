@@ -5,9 +5,9 @@
 {
   imports = [
 #  ./mako.nix
-  ./waybar.nix
+  # ./waybar.nix
   ./dms.nix
-  ./swaync.nix
+  # ./swaync.nix
   ./swaylock.nix
   ];
   #defining monitors for me niri
