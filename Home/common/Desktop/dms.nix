@@ -4,6 +4,7 @@ pkgs,
   ...
 }:
 {
+  imports = [inputs.dms.homeModules.dank-material-shell];
   programs.dms-shell = {
     enable = true;
     enableCalendarEvents = false;
