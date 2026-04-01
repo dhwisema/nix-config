@@ -13,6 +13,11 @@ pkgs,
     settings = {
       showLauncherButton = false;
       screenPreferences.wallpaper = [""];
+      barConfigs = {
+        barConfigs.leftWidgets = ["workspaceSwitcher" "focusedWindow"];
+        barConfigs.centerWidget = ["clock"];
+        barConfigs.rightWidgets = ["systemTray" "clipboard" "notificationButton" "controlCenterButton"];     
+       };
      };
   };
 }
