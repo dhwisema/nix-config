@@ -10,6 +10,7 @@
   ./waybar.nix
   ./swaync.nix
   ./swaylock.nix
+  ./niri.nix
 ];
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {
