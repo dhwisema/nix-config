@@ -19,9 +19,15 @@
     zoxide
     devenv
     ltspice
-    minicom
+    picocom
     wireshark
     strings
+    binwalk
+    bintools
+    busybox
+    mqtt-explorer
+    mqttmultimeter
+    mqttmultimeter
     esptool
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell
   ];
