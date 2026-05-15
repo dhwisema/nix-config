@@ -19,6 +19,10 @@
     zoxide
     devenv
     ltspice
+    minicom
+    wireshark
+    strings
+    esptool
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell
   ];
     
