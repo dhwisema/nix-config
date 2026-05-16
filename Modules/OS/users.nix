@@ -7,21 +7,6 @@
   ...
 }:
 {
-  #this feels like a bad idea so disabling for now
-  # Enable passwordless sudo.
-  # security.sudo.extraRules = [
-  #   {
-  #     users = [ "irrelevancy" ];
-  #     commands = [
-  #       {
-  #         command = "ALL";
-  #         options = [ "NOPASSWD" ];
-  #       }
-  #     ];
-  #   }
-  # ];
-
-
     # Enable the OpenSSH daemon.
   services.openssh = {
     enable = true;
@@ -32,21 +17,23 @@
   };
 
   # Open ports in the firewall.
+  #lowkey i think i can close this now because tailscale...
   networking.firewall.allowedTCPPorts = [ 22 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
 
   # Enable passwordless sudo.
-  security.sudo.extraRules = [
-    {
-      users = [ username ];
-      commands = [
-        {
-          command = "ALL";
-          options = if role == "server" then [ "NOPASSWD" ] else [];
-        }
-      ];
-    }
-  ];
+  # wait this is lowkey extra bad wtf.
+  # security.sudo.extraRules = [
+  #   {
+  #     users = [ username ];
+  #     commands = [
+  #       {
+  #         command = "ALL";
+  #         options = if role == "server" then [ "NOPASSWD" ] else [];
+  #       }
+  #     ];
+  #   }
+  # ];
   users = {
     mutableUsers = if role == "server" then false else true;
     users.${"irrelevancy"} = {
@@ -60,8 +47,7 @@
          "plugdev"
        "dialout"];
       openssh.authorizedKeys.keys = [
-				
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester" #jester
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVkFiDUTkFwLQ3g13XgdN5ekhmNYo5whYn+JmjTvLYu huntingdog5forsteam@gmail.com" #beau
       ];
     };
