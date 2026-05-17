@@ -49,6 +49,7 @@
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester" #jester
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVkFiDUTkFwLQ3g13XgdN5ekhmNYo5whYn+JmjTvLYu huntingdog5forsteam@gmail.com" #beau
+				"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPRfTaWtXV2hXANtyDFTw+4rCjJxHyRi8JCTNxloOvYM root@localhost"
       ];
     };
   };
