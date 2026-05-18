@@ -137,7 +137,7 @@
             ./Host/Jester/configuration.nix
             nixos-hardware.nixosModules.lenovo-thinkpad-z # i fear lenovo did not cook with this one
             lanzaboote.nixosModules.lanzaboote
-            ./Modules/SecureBoot.nix
+            ./Modules/OS/SecureBoot.nix
           ];
         }; # thinkpad z16
         Beau = mkNixosConfiguration {
