@@ -21,7 +21,6 @@
     ltspice
     picocom
     wireshark
-    strings
     binwalk
     bintools
     busybox
