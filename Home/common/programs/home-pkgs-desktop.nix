@@ -9,7 +9,8 @@
     foliate
     vesktop
     ghostty
-    alejandra
+    nixfmt
+    nixfmt-tree
     kicad
     nil
     signal-desktop
@@ -17,17 +18,18 @@
     obsidian
     nixd
     zoxide
-    devenv
-    ltspice
-    picocom
-    wireshark
-    binwalk
-    bintools
-    busybox
-    mqtt-explorer
-    mqttmultimeter
-    mqttmultimeter
-    esptool
+    jujutsu
+    # devenv
+    # ltspice
+    # picocom
+    # wireshark
+    # binwalk
+    # bintools
+    # busybox
+    # mqtt-explorer
+    # mqttmultimeter
+    # mqttmultimeter
+    # esptool
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell
   ];
     
