@@ -28,11 +28,11 @@
               content = {
                 type = "luks";
                 name = "cryptroot";
-                                # disable settings.keyFile if you want to use interactive password entry
+                # disable settings.keyFile if you want to use interactive password entry
                 passwordFile = "/tmp/secret.key"; # Interactive
                 settings = {
                   allowDiscards = true;
-                # keyFile = "/tmp/secret.key";
+                  # keyFile = "/tmp/secret.key";
                 };
                 extraOpenArgs = [
                   "--perf-no_read_workqueue"
@@ -40,23 +40,50 @@
                 ];
                 content = {
                   type = "btrfs";
-                  extraArgs = ["-L" "nixos" "-f"];
+                  extraArgs = [
+                    "-L"
+                    "nixos"
+                    "-f"
+                  ];
                   subvolumes = {
                     "/root" = {
                       mountpoint = "/";
-                      mountOptions = ["subvol=root" "compress=zstd:1" "noatime" "ssd" "discard=async"];
+                      mountOptions = [
+                        "subvol=root"
+                        "compress=zstd:1"
+                        "noatime"
+                        "ssd"
+                        "discard=async"
+                      ];
                     };
                     "/home" = {
                       mountpoint = "/home";
-                      mountOptions = ["subvol=home" "compress=zstd:1" "noatime" "ssd" "discard=async"];
+                      mountOptions = [
+                        "subvol=home"
+                        "compress=zstd:1"
+                        "noatime"
+                        "ssd"
+                        "discard=async"
+                      ];
                     };
                     "/nix" = {
                       mountpoint = "/nix";
-                      mountOptions = ["subvol=nix" "compress=zstd:1" "noatime" "ssd" "discard=async"];
+                      mountOptions = [
+                        "subvol=nix"
+                        "compress=zstd:1"
+                        "noatime"
+                        "ssd"
+                        "discard=async"
+                      ];
                     };
                     "/swap" = {
                       mountpoint = "/swap";
-                      mountOptions = ["subvol=swap" "compress=zstd:1" "compress=no" "ssd" ];
+                      mountOptions = [
+                        "subvol=swap"
+                        "compress=zstd:1"
+                        "compress=no"
+                        "ssd"
+                      ];
                       swap.swapfile.size = "34G";
                     };
                   };

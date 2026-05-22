@@ -2,6 +2,7 @@
   pkgs,
   lib,
   ...
-}: {
-    networking.firewall.allowedUDPPorts = [40000];
+}:
+{
+  networking.firewall.allowedUDPPorts = [ 40000 ];
 }

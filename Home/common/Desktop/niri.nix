@@ -1,14 +1,16 @@
-{config,  pkgs,
+{
+  config,
+  pkgs,
   lib,
   ...
 }:
 {
   imports = [
-#  ./mako.nix
-  # ./waybar.nix
-  ./dms.nix
-  # ./swaync.nix
-  ./swaylock.nix
+    #  ./mako.nix
+    # ./waybar.nix
+    ./dms.nix
+    # ./swaync.nix
+    ./swaylock.nix
   ];
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {
@@ -25,7 +27,7 @@
   stylix.targets.niri.enable = true;
   programs.niri.settings.spawn-at-startup = [
     { command = [ "awww-daemon" ]; }
-];
+  ];
 
   programs.niri.settings.prefer-no-csd = true;
   programs.niri.settings.environment = {
@@ -218,11 +220,10 @@
     };
 
     "Mod+Q".action.close-window = { };
-  #overview keybind
+    #overview keybind
     "Mod+Tab" = {
       action.toggle-overview = { };
     };
-
 
     "Mod+Left".action.focus-column-left = { };
     "Mod+Down".action.focus-window-down = { };

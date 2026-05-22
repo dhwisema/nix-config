@@ -7,7 +7,7 @@
 {
   stylix.targets.waybar.colors.enable = true;
   stylix.targets.waybar.addCss = false;
-  
+
   programs.waybar = {
     systemd.enable = true;
     enable = true;
@@ -18,7 +18,10 @@
         height = 35;
         spacing = "4";
 
-        modules-center = [ "clock" "niri/window" ];
+        modules-center = [
+          "clock"
+          "niri/window"
+        ];
         modules-right = [
           "battery"
           "bluetooth"
@@ -27,18 +30,18 @@
         ];
         modules-left = [ "niri/workspaces" ];
 
-          bluetooth = {
-            format = " {status}";
-            format-disbaled = "";
-            format-connected =" {num_connections} connected";
-            tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
-            tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
-            on-click = "vicinae vicinae://extensions/Gelei/bluetooth/devices";
-          };
+        bluetooth = {
+          format = " {status}";
+          format-disbaled = "";
+          format-connected = " {num_connections} connected";
+          tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
+          tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
+          on-click = "vicinae vicinae://extensions/Gelei/bluetooth/devices";
+        };
 
-          "niri/window" = {
-      "max-length" = 30;
-  };
+        "niri/window" = {
+          "max-length" = 30;
+        };
         clock = {
           format = "{:%I:%M%p %D}";
           tooltip = false;
@@ -170,7 +173,7 @@
          border-radius: .25em;
          margin: .5em .25em;
       }
-      
+
     '';
 
   };

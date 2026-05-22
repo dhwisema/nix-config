@@ -1,4 +1,9 @@
-{ pkgs, inputs,lib, ... }:
+{
+  pkgs,
+  inputs,
+  lib,
+  ...
+}:
 {
 
   home.packages = with pkgs; [
@@ -32,11 +37,11 @@
     # esptool
     inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell
   ];
-    
+
   programs.zellij = {
     enable = true;
     settings = {
-      copy_command = "wl-copy";       
+      copy_command = "wl-copy";
     };
   };
   programs.vicinae = {

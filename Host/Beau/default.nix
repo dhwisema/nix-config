@@ -1,4 +1,10 @@
-{config,lib,pkgs,...}:{
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
   imports = [
     ./hardware-configureation.nix
   ];
@@ -10,7 +16,7 @@
     };
   };
   services.udev.extraRules = ''
-  # Royal Kludge RK R65 - Disable joystick/tablet nodes to fix Steam detection
-  SUBSYSTEM=="input", ATTRS{idVendor}=="342d", ATTRS{idProduct}=="e453", ENV{ID_INPUT_JOYSTICK}="", ENV{ID_INPUT_TABLET}=""
-'';
+    # Royal Kludge RK R65 - Disable joystick/tablet nodes to fix Steam detection
+    SUBSYSTEM=="input", ATTRS{idVendor}=="342d", ATTRS{idProduct}=="e453", ENV{ID_INPUT_JOYSTICK}="", ENV{ID_INPUT_TABLET}=""
+  '';
 }

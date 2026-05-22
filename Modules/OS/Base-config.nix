@@ -21,7 +21,7 @@
   environment.variables = {
     EDITOR = "hx";
   };
-  
+
   #enable and make fish defaultUserShell
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
@@ -46,7 +46,8 @@
 
   #services
   services = {
-    tuned = { #tuned powermanagement
+    tuned = {
+      # tuned powermanagement
       enable = true;
       settings = {
         dynamic_tuning = true;

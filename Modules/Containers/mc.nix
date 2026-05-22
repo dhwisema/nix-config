@@ -1,7 +1,13 @@
 { config, pkgs, ... }:
 {
-  networking.firewall.allowedUDPPorts = [25565 19132];
-  networking.firewall.allowedTCPPorts = [25565 19132]; #PORTS FOR java and bedrock
+  networking.firewall.allowedUDPPorts = [
+    25565
+    19132
+  ];
+  networking.firewall.allowedTCPPorts = [
+    25565
+    19132
+  ]; # PORTS FOR java and bedrock
   #change default security list in oci management to allow above ports
   virtualisation.oci-containers = {
     backend = "podman"; # or "docker" if you prefer
@@ -19,17 +25,14 @@
 
       environment = {
         RCON_CMDS_STARTUP = ''
-geyser connectiontest 129.213.163.47 19132
-'';
-      RCON_CMDS_ON_CONNECT =  ''
-           '';
-      RCON_CMDS_LAST_DISCONNECT = ''
-           '';
+          geyser connectiontest 129.213.163.47 19132
+        '';
+        RCON_CMDS_ON_CONNECT = "";
+        RCON_CMDS_LAST_DISCONNECT = "";
         EULA = "TRUE";
         TYPE = "FABRIC";
-        PLUGINS = ''
-                     '';
-      SEED = "8796151973292232186";
+        PLUGINS = "";
+        SEED = "8796151973292232186";
         VANILLATWEAKS_SHARECODE = "Xa3ASF";
         MODRINTH_PROJECTS = ''
           lithium
@@ -60,28 +63,28 @@ geyser connectiontest 129.213.163.47 19132
           dungeons-and-taverns-jungle-temple-overhaul
           dungeons-and-taverns-desert-temple-overhaul
           dungeons-and-taverns-nether-fortress-overhaul
-                                    '';
+        '';
 
-                   VIEW_DISTANCE = "16";
-       OPS = ''        Huntingdog5 '';
-      EXISTING_OPS_FILE = "SYNCHRONIZE";
-      ENABLE_WHITELIST = "true";
-      WHITELIST = ''
-        Huntingdog5  
-        DancingCat524
-        ThinkingWithTime
-				manaexons
-				hamburgerchicken
-				schooner42
-				MikeyNCheese
-		'';
+        VIEW_DISTANCE = "16";
+        OPS = "Huntingdog5 ";
+        EXISTING_OPS_FILE = "SYNCHRONIZE";
+        ENABLE_WHITELIST = "true";
+        WHITELIST = ''
+                  Huntingdog5  
+                  DancingCat524
+                  ThinkingWithTime
+          				manaexons
+          				hamburgerchicken
+          				schooner42
+          				MikeyNCheese
+          		'';
         VERSION = "1.21.11";
         MEMORY = "16384M";
         TZ = "America/New_York";
         MODRINTH_DOWNLOAD_DEPENDENCIES = "required";
-        MODRINTH_ALLOWED_VERSION_TYPE =  "alpha";
+        MODRINTH_ALLOWED_VERSION_TYPE = "alpha";
       };
-       extraOptions = [
+      extraOptions = [
         "--interactive"
         "--tty"
       ];
@@ -91,4 +94,3 @@ geyser connectiontest 129.213.163.47 19132
     };
   };
 }
-    

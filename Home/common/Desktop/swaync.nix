@@ -3,7 +3,8 @@
   pkgs,
   config,
   ...
-}: {
+}:
+{
   services.swaync = {
     enable = true;
     settings = {
@@ -22,6 +23,6 @@
       notification-icon-size = 64;
       notification-body-image-height = 100;
       notification-body-image-width = 200;
-     };
+    };
   };
 }

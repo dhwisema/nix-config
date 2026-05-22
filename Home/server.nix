@@ -20,10 +20,10 @@
   home = {
     packages = with pkgs; [
     ];
-    enableNixpkgsReleaseCheck = false; #because unstable and hm just doesnt care so 25.11 and 26.05 and so on 
+    enableNixpkgsReleaseCheck = false; # because unstable and hm just doesnt care so 25.11 and 26.05 and so on
     # username = "irrelevancy"; # may break
-    username = username; 
-    stateVersion = "25.11"; 
+    username = username;
+    stateVersion = "25.11";
   };
 
   # Let Home Manager install and manage itself.

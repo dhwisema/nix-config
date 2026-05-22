@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   # Add an option to enable or disable iphone pairing for ethernet/file transfer
   options = {
     Idevice.enable = lib.mkOption {
@@ -35,4 +36,3 @@
 # Tethering on iOS is possible via Wifi hotspot, Bluetooth or USB. In order to enable USB tethering, first enable tethering in the iOS networking settings. After that run following command
 # $ idevicepair pair
 # Confirm pairing by accepting the connection on your iOS device. After that an ethernet device will appear in your network device list.
-

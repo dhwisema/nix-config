@@ -63,17 +63,19 @@
               [
                 ./Modules/OS/Base-config.nix
                 comin.nixosModules.comin
-          ({
-            services.comin = {
-              enable = true;
-              remotes = [{
-                name = "origin";
-                url = "https://github.com/dhwisema/nix-config.git";
-                branches.main.name = "main";
-              }];
-            };
-          })
-                
+                ({
+                  services.comin = {
+                    enable = true;
+                    remotes = [
+                      {
+                        name = "origin";
+                        url = "https://github.com/dhwisema/nix-config.git";
+                        branches.main.name = "main";
+                      }
+                    ];
+                  };
+                })
+
               ]
             else
               [
@@ -100,8 +102,14 @@
           default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix ];
 
           specialArgs = {
-         
-            inherit inputs username hostname role nvidia;
+
+            inherit
+              inputs
+              username
+              hostname
+              role
+              nvidia
+              ;
           }
           // args-os;
         in
@@ -150,11 +158,14 @@
         Stacy-Fakename = mkNixosConfiguration {
           hostname = "Stacy-Fakename";
           system = "aarch64-linux";
-          modules = [./Modules/Containers/mc.nix ./Host/Stacy-Fakename/configuration.nix ];
+          modules = [
+            ./Modules/Containers/mc.nix
+            ./Host/Stacy-Fakename/configuration.nix
+          ];
         }; # oracle cloud box
         Pumat = mkNixosConfiguration {
           hostname = "Pumat";
-          modules = [./Modules/Containers/CWA.nix ];
+          modules = [ ./Modules/Containers/CWA.nix ];
         }; # dell optiplex
         Yasha = mkNixosConfiguration {
           hostname = "Yasha";

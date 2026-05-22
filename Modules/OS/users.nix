@@ -7,7 +7,7 @@
   ...
 }:
 {
-    # Enable the OpenSSH daemon.
+  # Enable the OpenSSH daemon.
   services.openssh = {
     enable = true;
     settings = {
@@ -39,17 +39,23 @@
     users.${"irrelevancy"} = {
       hashedPassword = "$y$j9T$tsD8VLtqLhL5a/OIA7Txb1$bpOz8kmMODZVSPITsRMjhKd59m2Wvvhhh7w/ElmFdn1";
       isNormalUser = true;
-      extraGroups = if role == "server" then[
-        "networkmanager"
-        "wheel"
-      ] else ["networkmanager"
-        "wheel"
-         "plugdev"
-       "dialout"];
+      extraGroups =
+        if role == "server" then
+          [
+            "networkmanager"
+            "wheel"
+          ]
+        else
+          [
+            "networkmanager"
+            "wheel"
+            "plugdev"
+            "dialout"
+          ];
       openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester" #jester
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVkFiDUTkFwLQ3g13XgdN5ekhmNYo5whYn+JmjTvLYu huntingdog5forsteam@gmail.com" #beau
-				"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPRfTaWtXV2hXANtyDFTw+4rCjJxHyRi8JCTNxloOvYM root@localhost"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFWcxSaxxRfizmQh2zdrRCt0Ic+eVKOc2w+nsQOVBh+e irrelevancy@Jester" # jester
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVkFiDUTkFwLQ3g13XgdN5ekhmNYo5whYn+JmjTvLYu huntingdog5forsteam@gmail.com" # beau
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPRfTaWtXV2hXANtyDFTw+4rCjJxHyRi8JCTNxloOvYM root@localhost"
       ];
     };
   };

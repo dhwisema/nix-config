@@ -4,7 +4,8 @@
   stylix,
   pkgs,
   ...
-}: {
+}:
+{
   stylix.enableReleaseChecks = false;
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";

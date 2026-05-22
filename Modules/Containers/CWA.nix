@@ -1,22 +1,27 @@
-{nixpkgs,hostname,lib,...}:{
+{
+  nixpkgs,
+  hostname,
+  lib,
+  ...
+}:
+{
   virtualisation.oci-containers.containers.calibre-Web-Automate = {
     pull = "newer";
     image = "crocodilestick/calibre-web-automated:latest";
-    
-    
-  environment = {
-    PUID ="1000";
-    PGID ="1000";
-    TZ = "America/New_York";
-    HARDCOVER_TOKEN="";
-    CWA_PORT_OVERRIDE="8083";
-    NETWORK_SHARE_MODE="false";
-  };
-  volumes = [
+
+    environment = {
+      PUID = "1000";
+      PGID = "1000";
+      TZ = "America/New_York";
+      HARDCOVER_TOKEN = "";
+      CWA_PORT_OVERRIDE = "8083";
+      NETWORK_SHARE_MODE = "false";
+    };
+    volumes = [
       "/home/irrelevancy/CWA/config:/config"
       "/home/irrelevancy/CWA/ingest:/cwa-book-ingest"
       "/home/irrelevancy/CWA/library:/calibre-library"
-   ];
-   ports =[ "8083:8083" ];
+    ];
+    ports = [ "8083:8083" ];
   };
 }

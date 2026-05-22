@@ -3,7 +3,8 @@
   lib,
   nvidia,
   ...
-}: {
+}:
+{
   config = lib.mkIf nvidia {
     #nvidia and open gl
     hardware.graphics.enable = true;
@@ -11,7 +12,7 @@
 
     #enable nvidia
     # Load nvidia driver for Xorg and Wayland
-    services.xserver.videoDrivers = ["nvidia"];
+    services.xserver.videoDrivers = [ "nvidia" ];
     hardware.nvidia = {
       # Modesetting is required.
       modesetting.enable = true;

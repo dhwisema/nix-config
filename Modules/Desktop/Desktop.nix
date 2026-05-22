@@ -1,6 +1,12 @@
-{config,lib,pkgs,...}:{
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
   imports = [
-  ./themeing/stylix.nix
-  ./Niri/niri.nix
+    ./themeing/stylix.nix
+    ./Niri/niri.nix
   ];
 }
