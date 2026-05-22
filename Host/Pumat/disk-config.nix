@@ -86,7 +86,7 @@
         };
       };
       sata-two = {
-        type = "disl";
+        type = "disk";
         device = "/dev/sda";
         content = {
           type = "gpt";
