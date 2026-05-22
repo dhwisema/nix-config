@@ -130,6 +130,7 @@
                   "compress=zstd:3"
                   "noatime"
                   "discard=async"
+                  "/dev/disk/by-id/ata-Samsung_SSD_870_EVO_500GB_S62ANZ0R402138X"
                 ];
               };
             };
