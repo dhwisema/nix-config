@@ -83,9 +83,7 @@
               size = "100%";
             };
           };
-
-        }
-
+        };
       };
       sata-two = {
         type = "disl";
@@ -97,13 +95,13 @@
               size = "100%";
               content = {
                 type = "btrfs";
-                extraArgs = {
+                extraArgs = [
                   "-f"
                   "-L"
                   "-m raid1"
                   "-d single"
                   "/dev/sda1"
-                };
+                ];
                 mountpoint = "/data";
                 mountOptions = [
                   "ssd_spread"
