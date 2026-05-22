@@ -87,7 +87,7 @@
 
       sata-one = {
         type = "disk";
-        device = "/dev/disk/by-id/ata-SK_hynix_SC313_SATA_512GB_MJ88N525610308O3E";
+        device = "/dev/disk/by-id/ata-Samsung_SSD_870_EVO_500GB_S62ANZ0R402138X";
 
         content = {
           type = "gpt";
@@ -102,7 +102,7 @@
 
       sata-two = {
         type = "disk";
-        device = "/dev/disk/by-id/ata-Samsung_SSD_870_EVO_500GB_S62ANZ0R402138X";
+        device = "/dev/disk/by-id/ata-SK_hynix_SC313_SATA_512GB_MJ88N525610308O3E";
 
         content = {
           type = "gpt";
@@ -122,11 +122,6 @@
                   "raid1"
                   "-d"
                   "raid1"
-                ];
-
-                devices = [
-                  "/dev/disk/by-id/ata-SK_hynix_SC313_SATA_512GB_MJ88N525610308O3E-part1"
-                  "/dev/disk/by-id/ata-Samsung_SSD_870_EVO_500GB_S62ANZ0R402138X-part1"
                 ];
 
                 mountpoint = "/data";
