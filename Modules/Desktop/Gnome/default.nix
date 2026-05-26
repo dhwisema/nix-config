@@ -11,7 +11,6 @@
   environment.systemPackages = with pkgs; [
     gnome-tweaks
     gnomeExtensions.arcmenu
-    gnomeExtensions.arc-menu
     gnomeExtensions.blur-my-shell
     gnomeExtensions.paperwm
   ];
