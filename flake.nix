@@ -159,7 +159,7 @@
           hostname = "Stacy-Fakename";
           system = "aarch64-linux";
           modules = [
-            ./Modules/Containers/mc.nix
+            #./Modules/Containers/mc.nix
             ./Host/Stacy-Fakename/configuration.nix
           ];
         }; # oracle cloud box
