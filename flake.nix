@@ -168,6 +168,7 @@
           modules = [ ./Modules/Containers/CWA.nix ];
         }; # dell optiplex
         Yasha = mkNixosConfiguration {
+          disko-use = false;
           hostname = "Yasha";
           modules = [ ];
         }; # lenovo mq90
