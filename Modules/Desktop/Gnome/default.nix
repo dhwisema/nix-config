@@ -8,7 +8,7 @@
   services.gnome.core-apps.enable = true;
   services.gnome.core-developer-tools.enable = true;
   services.gnome.games.enable = false;
-  environment.systemPackages = with pkgs; [gnome-tweaks];
+  environment.systemPackages = with pkgs; [gnome-tweaks gnome-menus];
   environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
   services.gnome.gnome-browser-connector.enable = true;
 
