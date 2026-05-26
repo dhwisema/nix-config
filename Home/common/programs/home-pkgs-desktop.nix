@@ -24,7 +24,6 @@
     nixd
     zoxide
     jujutsu
-    nix-instantiate
     # devenv
     # ltspice
     # picocom
