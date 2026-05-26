@@ -8,8 +8,8 @@
 
   home.packages = with pkgs; [
     onlyoffice-desktopeditors
-    # distrobox-tui
-    # distrobox #dont need this currently will reneable if i have to use code composer again.i
+    distrobox-tui
+    distrobox #dont need this currently will reneable if i have to use code composer again.i
     smplayer
     foliate
     vesktop
@@ -24,6 +24,7 @@
     nixd
     zoxide
     jujutsu
+    nix-instantiate
     # devenv
     # ltspice
     # picocom
@@ -35,7 +36,6 @@
     # mqttmultimeter
     # mqttmultimeter
     # esptool
-    inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell
   ];
 
   programs.zellij = {
