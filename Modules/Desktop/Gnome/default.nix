@@ -10,5 +10,6 @@
   services.gnome.games.enable = false;
   environment.systemPackages = with pkgs; [gnome-tweaks];
   environment.gnome.excludePackages = with pkgs; [ gnome-tour gnome-user-docs ];
+  services.gnome.chrome-gnome-shell.enable
 
 }
