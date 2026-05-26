@@ -30,7 +30,7 @@
               content = {
                 type = "swap";
                 discardPolicy = "both";
-                resumeDevice = false; # never hibernate cause cloud server
+                resumeDevice = true; # never hibernate cause cloud server
               };
             };
           };
