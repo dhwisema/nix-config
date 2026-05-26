@@ -4,6 +4,7 @@
   pkgs,
   hostname,
   ...
-}:{
-  imports = if hostname == "Pumat" then [./Modules/Containers/CWA.nix] else [];
+}:
+{
+  imports = if hostname == "Pumat" then [ ./Modules/Containers/CWA.nix ] else [ ];
 }
