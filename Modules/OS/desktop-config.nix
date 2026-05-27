@@ -18,12 +18,14 @@
     enable = true;
     dockerCompat = true;
   };
-
+services.printing.enable = true;
   services.avahi = {
     enable = true;
     nssmdns4 = true;
     openFirewall = true;
   };
+
+
   hardware.bluetooth.enable = true;
   services.flatpak.enable = true;
   programs.zoxide.enable = true;
