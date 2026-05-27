@@ -2,8 +2,8 @@
   services.jellyfin = {
     enable = true;
     cacheDir = "/data/cache/jellyfin";
-    logDir = /data/log/jellyfin;
-    configDir = /data/config/jellyfin;
+    logDir = "/data/log/jellyfin";
+    configDir = "/data/config/jellyfin";
   };
  
   systemd.services.jellyfin.environment = {
