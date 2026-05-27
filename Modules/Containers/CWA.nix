@@ -18,9 +18,9 @@
       NETWORK_SHARE_MODE = "false";
     };
     volumes = [
-      "/home/irrelevancy/CWA/config:/config"
-      "/home/irrelevancy/CWA/ingest:/cwa-book-ingest"
-      "/home/irrelevancy/CWA/library:/calibre-library"
+      "/data/CWA/config:/config"
+      "/data/CWA/ingest:/cwa-book-ingest"
+      "/data/CWA/library:/calibre-library"
     ];
     ports = [ "8083:8083" ];
   };
