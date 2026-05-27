@@ -1,4 +1,5 @@
 {pkgs,config,...}:{
+  networking.firewall.trustedInterfaces = [ "tailscale0" ];
   services.jellyfin = {
     enable = true;
     openFirewall = true;
