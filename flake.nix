@@ -165,7 +165,7 @@
         }; # oracle cloud box
         Pumat = mkNixosConfiguration {
           hostname = "Pumat";
-          modules = [ ./Modules/Containers/CWA.nix ./default.nix ./Host/Pumat ./Modules/Containers/jellyfin.nix];
+          modules = [ ./default.nix ./Host/Pumat ];
         }; # dell optiplex
         Yasha = mkNixosConfiguration {
           disko-use = false;
