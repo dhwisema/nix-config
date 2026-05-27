@@ -20,6 +20,5 @@
     LIBVA_DRIVER_NAME = "iHD";
   };
   imports = [
-    ./hardware-configureation.nix
   ];
 }
