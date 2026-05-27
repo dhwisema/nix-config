@@ -12,6 +12,7 @@
     ./Base-config.nix
     ./../Desktop/Desktop.nix
     ./../Programs/wireshark.nix
+    ./../Programs/Idevice.nix
   ];
   #because i hate life and nixos doesnt have pyside 6 working correctly yay
   virtualisation.podman = {
