@@ -1,6 +1,7 @@
 {pkgs,config,...}:{
   services.jellyfin = {
     enable = true;
+    openFirewall = true;
     cacheDir = "/data/cache/jellyfin";
     logDir = "/data/log/jellyfin";
     configDir = "/data/config/jellyfin";
