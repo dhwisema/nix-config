@@ -6,5 +6,5 @@
   ...
 }:
 {
-  imports = if hostname == "Pumat" then [ ./Modules/Containers/CWA.nix ./Modules/Containers/jellyfin.nix ] else [ ];
+  imports = if hostname == "Pumat" then [ ./Modules/Containers/CWA.nix ./Modules/Containers/Jellyfin.nix ] else [ ];
 }
