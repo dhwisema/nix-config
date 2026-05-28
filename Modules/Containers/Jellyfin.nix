@@ -1,4 +1,5 @@
 {pkgs,config,...}:{
+  #move thos
   networking.firewall.trustedInterfaces = [ "tailscale0" ];
   services.jellyfin = {
     enable = true;

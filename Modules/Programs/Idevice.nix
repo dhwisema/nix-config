@@ -6,13 +6,6 @@
 }:
 {
   # Add an option to enable or disable iphone pairing for ethernet/file transfer
-  options = {
-    Idevice.enable = lib.mkOption {
-      type = lib.types.bool;
-      default = true;
-      description = "Enable Idevice.";
-    };
-  };
   #
 
   #
