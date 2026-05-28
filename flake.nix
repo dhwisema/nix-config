@@ -170,7 +170,7 @@
         Yasha = mkNixosConfiguration {
           disko-use = false;
           hostname = "Yasha";
-          modules = [ ];
+          modules = [./Host/Yasha];
         }; # lenovo mq90
       };
     };
