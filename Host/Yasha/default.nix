@@ -4,8 +4,9 @@
   "/home".options = [ "compress=zstd" "noatime" ];
   "/nix".options = [ "compress=zstd" "noatime" ];
   "/data".options = ["compress=zstd" "noatime"];
-  "/swap".options = [];
 };
+
+swapDevices = [ { device = "/swap/swapfile"; } ];
 
 services.btrfs.autoScrub = {
   enable = true;
