@@ -13,7 +13,10 @@
     gnomeExtensions.arcmenu
     gnomeExtensions.blur-my-shell
     gnomeExtensions.paperwm
+    displaylink
   ];
+  services.xserver.videoDrivers = [ "displaylink" ];
+  systemd.services.dlm.wantedBy = [ "multi-user.target" ];
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     gnome-user-docs
