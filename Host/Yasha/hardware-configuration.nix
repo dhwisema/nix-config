@@ -34,7 +34,7 @@
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/12CE-A600";
       fsType = "vfat";
-      options = ["dmask=0077" "fmask=0077"];
+      options = ["umask=0077"];
     };
 
   fileSystems."/data" =
