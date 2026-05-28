@@ -13,7 +13,7 @@
     };
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     stylix.url = "github:danth/stylix";
-    niri.url = "github:sodiboo/niri-flake";
+    #niri.url = "github:sodiboo/niri-flake";
     waveforms.url = "github:liff/waveforms-flake";
     agenix = {
       url = "github:ryantm/agenix";
@@ -28,20 +28,20 @@
       url = "github:nlewo/comin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    awww.url = "git+https://codeberg.org/LGFae/awww";
+    # awww.url = "git+https://codeberg.org/LGFae/awww";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     vicinae-extensions = {
       url = "github:vicinaehq/extensions";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/quickshell/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # quickshell = {
+    #   url = "git+https://git.outfoxxed.me/quickshell/quickshell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # dms = {
+    #   url = "github:AvengeMedia/DankMaterialShell/stable";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
   outputs =
     inputs:
