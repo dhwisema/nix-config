@@ -6,12 +6,14 @@
   "/data".options = ["compress=zstd" "noatime"];
 };
 
-swapDevices = [ { device = "/swap/swapfile"; } ];
+# swapDevices = [ { device = "/swap/swapfile"; } ];
 
 services.btrfs.autoScrub = {
   enable = true;
   interval = "monthly";
   fileSystems = [ "/" ];
 };
+
+ zramSwap.enable = true;
 
 }
