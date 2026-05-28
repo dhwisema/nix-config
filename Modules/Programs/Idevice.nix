@@ -9,7 +9,7 @@
   #
 
   #
-  config = lib.mkIf config.Idevice.enable {
+ 
     environment.systemPackages = with pkgs; [
       usbmuxd
       libimobiledevice
@@ -19,8 +19,7 @@
       enable = true;
       package = pkgs.usbmuxd2;
     };
-  };
-}
+  }
 # Mounting
 # Mounting the device via iFuse is possible with the following commands
 # $ mkdir /tmp/iphone
