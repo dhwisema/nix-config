@@ -34,7 +34,7 @@
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/12CE-A600";
       fsType = "vfat";
-      options = ["umask=0077" ];
+      options = ["dmask=0077" "fmask=0077"];
     };
 
   fileSystems."/data" =
@@ -42,7 +42,7 @@
       fsType = "btrfs";
     };
 
-  swapDevices = [{ device = "/swap/swapfile"; }];
+  swapDevices = [];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
