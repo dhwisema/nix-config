@@ -22,6 +22,7 @@
   programs.zoxide.enableFishIntegration = true;
   programs.helix.enable = true;
   programs.firefox = {
+    enable = true;
     profiles = {
       profile_0 = {
         # choose a profile name; directory is /home/<user>/.mozilla/firefox/profile_0
