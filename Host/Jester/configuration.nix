@@ -17,6 +17,27 @@
   };
   boot.kernelParams = [ "amdgpu.dcdebugmask=0x10" ]; # disable psr-su
 
+
+
+
+  
+
+  systemd.services.wifi-fix = {
+    enable = true;
+    after = [ "suspend.target" "hibernate.target" ];
+    wantedBy = [ "suspend.target" "hibernate.target" ];
+    description = "fix qcnfa wifi";
+    sript = ''
+        rmmod ath11k_pci ath11k &&  modprobe ath11k_pci ath11k
+
+       '';
+    serviceConfig = {
+        Type = "oneshot";
+
+    };
+  };
+
+  
   #iso use only networking.networkmanager.enable = lib.mkForce false;
 
   #boot.kernelPackages = lib.mkForce pkgs.linuxPackages;
