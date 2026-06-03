@@ -9,17 +9,17 @@
   #
 
   #
- 
-    environment.systemPackages = with pkgs; [
-      usbmuxd
-      libimobiledevice
-      ifuse # optional, to mount using 'ifuse'
-    ];
-    services.usbmuxd = {
-      enable = true;
-      package = pkgs.usbmuxd2;
-    };
-  }
+
+  environment.systemPackages = with pkgs; [
+    usbmuxd
+    libimobiledevice
+    ifuse # optional, to mount using 'ifuse'
+  ];
+  services.usbmuxd = {
+    enable = true;
+    package = pkgs.usbmuxd2;
+  };
+}
 # Mounting
 # Mounting the device via iFuse is possible with the following commands
 # $ mkdir /tmp/iphone

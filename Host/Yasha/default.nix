@@ -1,19 +1,32 @@
-{config,lib,...}:{
+{ config, lib, ... }:
+{
   fileSystems = {
-  "/".options = [ "compress=zstd" "noatime" ];
-  "/home".options = [ "compress=zstd" "noatime" ];
-  "/nix".options = [ "compress=zstd" "noatime" ];
-  "/data".options = ["compress=zstd" "noatime"];
-};
+    "/".options = [
+      "compress=zstd"
+      "noatime"
+    ];
+    "/home".options = [
+      "compress=zstd"
+      "noatime"
+    ];
+    "/nix".options = [
+      "compress=zstd"
+      "noatime"
+    ];
+    "/data".options = [
+      "compress=zstd"
+      "noatime"
+    ];
+  };
 
-# swapDevices = [ { device = "/swap/swapfile"; } ];
+  # swapDevices = [ { device = "/swap/swapfile"; } ];
 
-services.btrfs.autoScrub = {
-  enable = true;
-  interval = "monthly";
-  fileSystems = [ "/" ];
-};
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "monthly";
+    fileSystems = [ "/" ];
+  };
 
- zramSwap.enable = true;
+  zramSwap.enable = true;
 
 }
