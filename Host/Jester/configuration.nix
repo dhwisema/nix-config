@@ -27,7 +27,7 @@
     after = [ "suspend.target" "hibernate.target" ];
     wantedBy = [ "suspend.target" "hibernate.target" ];
     description = "fix qcnfa wifi";
-    sript = ''
+    script = ''
         rmmod ath11k_pci ath11k &&  modprobe ath11k_pci ath11k
 
        '';
