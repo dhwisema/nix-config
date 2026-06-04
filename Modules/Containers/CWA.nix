@@ -10,8 +10,8 @@
     image = "crocodilestick/calibre-web-automated:latest";
 
     environment = {
-      PUID = "1000";
-      PGID = "1000";
+      PUID = "1020";
+      PGID = "1020";
       TZ = "America/New_York";
       HARDCOVER_TOKEN = "";
       CWA_PORT_OVERRIDE = "8083";
