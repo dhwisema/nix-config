@@ -44,7 +44,6 @@
   virtualisation.oci-containers.containers.bazarr = {
 
     restart = "unless-stopped";
-    logging.driver = "json";
     environment = {
       PUID = "1000";
       PGID = "1000";
