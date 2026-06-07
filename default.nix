@@ -11,6 +11,7 @@
       [
         ./Modules/Containers/CWA.nix
         ./Modules/Containers/Jellyfin.nix
+        ./Modules/Containers/ARR.nix
       ]
     else
       [ ];
