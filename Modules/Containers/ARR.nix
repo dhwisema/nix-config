@@ -22,6 +22,7 @@
     environment = {
       PUID = "1001";
       PGID = "1001";
+      WEBUI_PORTS = "7878/tcp"
     };
     hostname = "radarr.internal";
     image = "ghcr.io/hotio/radarr:latest";
@@ -37,6 +38,7 @@
     environment = {
       PUID = "1001";
       PGID = "1001";
+      WEBUI_PORTS = "8989/tcp";
     };
     hostname = "sonarr.internal";
     image = "ghcr.io/hotio/sonarr:latest";
@@ -55,6 +57,7 @@
     environment = {
       PUID = "1001";
       PGID = "1001";
+      WEBUI_PORTS = "6767/tcp";
     };
     hostname = "bazarr.internal";
     image = "ghcr.io/hotio/bazarr:latest";
