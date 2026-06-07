@@ -5,12 +5,19 @@
   ...
 }:
 {
-  users.groups.mediashare ={
-  gid = "1001";
-  members = ["irrelevancy" "jellyfin" "arr"];};
-users.users.arr = {
-  uid = "1001";
-};
+  users.groups.mediashare = {
+    gid = 1001;
+    members = [
+      "irrelevancy"
+      "jellyfin"
+      "arr"
+    ];
+  };
+  users.users.arr = {
+    uid = 1001;
+    isSystemUser = true;
+    group = "mediashare";
+  };
   virtualisation.oci-containers.containers.radarr = {
     environment = {
       PUID = "1001";
@@ -65,7 +72,9 @@ users.users.arr = {
     environment = {
       PUID = "1001";
       PGID = "1001";
-
+      UMASK = "002";
+      WEBUI_PORTS = "8080/tcp";
+      LIBTORRENT = "v1";
       VPN_ENABLED = "true";
       VPN_CONF = "wg0";
       VPN_PROVIDER = "proton";
@@ -88,7 +97,7 @@ users.users.arr = {
     volumes = [
       "/etc/localtime:/etc/localtime:ro"
       "/data/appdata/qbittorrent:/config"
-      "/data/jellyarr/torrent:/data/torrent:rw"
+      "/data/jellyarr/torrent:/data/torrents:rw"
     ];
 
   };
