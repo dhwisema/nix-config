@@ -97,7 +97,7 @@
     volumes = [
       "/etc/localtime:/etc/localtime:ro"
       "/data/appdata/qbittorrent:/config"
-      "/data/jellyarr/torrent:/data/torrents:rw"
+      "/data/jellyarr/torrents:/data/torrent:rw"
     ];
 
   };
