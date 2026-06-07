@@ -5,14 +5,20 @@
   ...
 }:
 {
+  users.groups.mediashare ={
+  gid = "1001";
+  members = ["irrelevancy" "jellyfin" "arr"];};
+users.users.arr = {
+  uid = "1001";
+};
   virtualisation.oci-containers.containers.radarr = {
     environment = {
-      PUID = "1000";
-      PGID = "1000";
+      PUID = "1001";
+      PGID = "1001";
     };
     hostname = "radarr.internal";
     image = "ghcr.io/hotio/radarr:latest";
-    ports = ["7878:7878"];
+    ports = [ "7878:7878" ];
     extraOptions = [ "--pull=newer" ];
     volumes = [
       "/etc/localtime:/etc/localtime:ro"
@@ -22,12 +28,12 @@
   };
   virtualisation.oci-containers.containers.sonarr = {
     environment = {
-      PUID = "1000";
-      PGID = "1000";
+      PUID = "1001";
+      PGID = "1001";
     };
     hostname = "sonarr.internal";
     image = "ghcr.io/hotio/sonarr:latest";
-    ports = ["8989:8989"];
+    ports = [ "8989:8989" ];
 
     extraOptions = [ "--pull=newer" ];
 
@@ -40,12 +46,12 @@
   virtualisation.oci-containers.containers.bazarr = {
 
     environment = {
-      PUID = "1000";
-      PGID = "1000";
+      PUID = "1001";
+      PGID = "1001";
     };
     hostname = "bazarr.internal";
     image = "ghcr.io/hotio/bazarr:latest";
-    ports = ["6767:6767"];
+    ports = [ "6767:6767" ];
 
     extraOptions = [ "--pull=newer" ];
 
@@ -57,8 +63,8 @@
   };
   virtualisation.oci-containers.containers.qbittorrent = {
     environment = {
-      PUID = "1000";
-      PGID = "1000";
+      PUID = "1001";
+      PGID = "1001";
 
       VPN_ENABLED = "true";
       VPN_CONF = "wg0";
@@ -76,7 +82,7 @@
 
     hostname = "qbittorrent";
     image = "ghcr.io/hotio/qbittorrent:latest";
-    ports = ["8080:8080"];
+    ports = [ "8080:8080" ];
     extraOptions = [ "--pull=newer" ];
 
     volumes = [
