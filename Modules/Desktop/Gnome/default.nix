@@ -13,7 +13,7 @@
     gnomeExtensions.arcmenu
     gnomeExtensions.blur-my-shell
     gnomeExtensions.paperwm
-    ];
+  ];
 
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour

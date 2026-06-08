@@ -165,12 +165,15 @@
         }; # oracle cloud box
         Pumat = mkNixosConfiguration {
           hostname = "Pumat";
-          modules = [ ./default.nix ./Host/Pumat ];
+          modules = [
+            ./default.nix
+            ./Host/Pumat
+          ];
         }; # dell optiplex
         Yasha = mkNixosConfiguration {
           disko-use = false;
           hostname = "Yasha";
-          modules = [./Host/Yasha];
+          modules = [ ./Host/Yasha ];
         }; # lenovo mq90
       };
     };

@@ -24,7 +24,7 @@
     nixd
     zoxide
     jujutsu
-    # devenv
+    devenv
     # ltspice
     # picocom
     # wireshark
