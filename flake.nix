@@ -99,7 +99,7 @@
               ]
             else
               [ ];
-          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix ];
+          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix niri.homeModules.niri];
 
           specialArgs = {
 
