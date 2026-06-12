@@ -7,9 +7,9 @@
 {
   imports = [
     #  ./mako.nix
-    # ./waybar.nix
-    ./dms.nix
-    # ./swaync.nix
+    ./waybar.nix
+    # ./dms.nix
+    ./swaync.nix
     ./swaylock.nix
   ];
   #defining monitors for me niri
@@ -58,7 +58,7 @@
     hide-after-inactive-ms = 1000;
     hide-when-typing = true;
     size = 20;
-    theme = "BreezeX-RosePine-Linux";
+    theme = "everforest-cursors";
 
   };
   programs.niri.settings.window-rules = [

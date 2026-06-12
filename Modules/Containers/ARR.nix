@@ -22,7 +22,7 @@
     environment = {
       PUID = "1001";
       PGID = "1001";
-      WEBUI_PORTS = "7878/tcp"
+      WEBUI_PORTS = "7878/tcp";
     };
     hostname = "radarr.internal";
     image = "ghcr.io/hotio/radarr:latest";

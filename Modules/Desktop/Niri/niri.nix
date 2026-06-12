@@ -22,7 +22,7 @@
         ];
       };
     };
-  };
+  };  
   environment.systemPackages = with pkgs; [
     # sway-contrib.grimshot
     xwayland-satellite
@@ -32,22 +32,38 @@
     adwaita-icon-theme
     bluetuith
     gnome-keyring
-    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
+    awww
     wl-clipboard
+    nautilus
   ];
   hardware.brillo.enable = true;
   environment.pathsToLink = [ "share/thumbnailers" ];
 
-  programs.niri.enable = true;
 
+
+  #nautilus
+  services.gvfs.enable = true;
+  environment.sessionVariables.GST_PLUGIN_SYSTEM_PATH_1_0 = lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0" [
+  pkgs.gst_all_1.gst-plugins-good
+  pkgs.gst_all_1.gst-plugins-bad
+  pkgs.gst_all_1.gst-plugins-ugly
+  pkgs.gst_all_1.gst-plugins-libav
+];
+  
+
+
+
+
+  programs.niri.enable = true;
+  programs.regreet.enable = true;
   services.greetd = {
     enable = true;
     restart = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --sessions /${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session --user-menu --window-padding 5 --asterisks --asterisks-char ^ --greeting '<~welcome~>' --theme 'button=yellow'";
-        user = "greeter";
-      };
-    };
+    # settings = {
+    #   default_session = {
+    #     command = "${pkgs.tuigreet}/bin/tuigreet --time --sessions /${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session --user-menu --window-padding 5 --asterisks --asterisks-char ^ --greeting '<~welcome~>' --theme 'button=yellow'";
+    #     user = "greeter";
+    #   };
+    # };
   };
 }
