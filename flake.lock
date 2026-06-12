@@ -354,7 +354,7 @@
         "type": "github"
       }
     },
-    "niri": {
+    "niri-flake": {
       "inputs": {
         "niri-stable": "niri-stable",
         "niri-unstable": "niri-unstable",
@@ -605,7 +605,7 @@
         "disko": "disko",
         "home-manager": "home-manager_2",
         "lanzaboote": "lanzaboote",
-        "niri": "niri",
+        "niri-flake": "niri-flake",
         "nix-flatpak": "nix-flatpak",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_4",

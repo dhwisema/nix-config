@@ -2,9 +2,11 @@
   config,
   pkgs,
   lib,
+  inputs,
   ...
 }:
 {
+  programs.niri.enable = true;
   imports = [
     #  ./mako.nix
     ./waybar.nix

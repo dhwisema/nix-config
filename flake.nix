@@ -13,8 +13,10 @@
     };
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     stylix.url = "github:danth/stylix";
-    niri.url = "github:sodiboo/niri-flake";
-    waveforms.url = "github:liff/waveforms-flake";
+    niri-flake.url = "github:sodiboo/niri-flake";
+    waveforms =
+    {url = "github:liff/waveforms-flake";
+    inputs.nixpkgs.follows = "nixpkgs";};
     agenix = {
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -82,7 +84,7 @@
                 ./Modules/OS/desktop-config.nix
                 nix-flatpak.nixosModules.nix-flatpak
                 stylix.nixosModules.stylix
-                niri.nixosModules.niri
+                niri-flake.homeModules.niri
                 waveforms.nixosModule
                 ({ users.users.${username}.extraGroups = [ "plugdev" ]; })
                 nixos-hardware.nixosModules.common-cpu-amd # sets scheduling things for kernel
@@ -99,7 +101,7 @@
               ]
             else
               [ ];
-          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix niri.homeModules.niri];
+          default-hm = if role == "server" then [ ./Home/server.nix ] else [ ./Home/desktop.nix ];
 
           specialArgs = {
 
