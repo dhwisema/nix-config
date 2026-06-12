@@ -3,6 +3,7 @@
   pkgs,
   lib,
   inputs,
+  niri-flake,
   ...
 }:
 {
@@ -13,6 +14,7 @@
     # ./dms.nix
     ./swaync.nix
     ./swaylock.nix
+    niri-flake.homeModules.niri
   ];
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {
