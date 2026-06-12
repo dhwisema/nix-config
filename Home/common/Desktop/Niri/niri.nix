@@ -12,6 +12,7 @@
     ./swaync.nix
     ./swaylock.nix
   ];
+  programs.niri.enable = true;
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {
     position.x = 0;
