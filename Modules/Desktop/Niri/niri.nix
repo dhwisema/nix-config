@@ -32,7 +32,7 @@
     adwaita-icon-theme
     bluetuith
     gnome-keyring
-    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
+    awww
     wl-clipboard
   ];
   hardware.brillo.enable = true;
