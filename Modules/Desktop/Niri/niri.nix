@@ -24,7 +24,7 @@
     };
   };
   environment.systemPackages = with pkgs; [
-    # sway-contrib.grimshot
+    sway-contrib.grimshot
     xwayland-satellite
     pavucontrol
     waybar
