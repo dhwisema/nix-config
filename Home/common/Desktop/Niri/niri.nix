@@ -8,9 +8,10 @@
   imports = [
     #  ./mako.nix
     # ./waybar.nix
-    ./dms.nix
+    #./dms.nix
     # ./swaync.nix
-    ./swaylock.nix
+    #./swaylock.nix
+    ./noctalia.nix
   ];
   #defining monitors for me niri
   programs.niri.settings.outputs."DP-1" = {
