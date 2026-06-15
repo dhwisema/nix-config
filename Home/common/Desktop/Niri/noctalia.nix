@@ -1,6 +1,6 @@
 { inputs, ... }:
 {
-  home-manager.users.irrelvevancy = {
+  home-manager.users.irrelevancy = {
     imports = [
       inputs.noctalia.homeModules.default
     ];
