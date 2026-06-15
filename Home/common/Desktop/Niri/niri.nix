@@ -28,11 +28,11 @@
   stylix.targets.niri.enable = true;
   programs.niri.settings.spawn-at-startup = [
     { command = [ "awww-daemon" ]; }
-    { command = ["noctalia"];}
+    { command = [ "noctalia" ]; }
   ];
-programs.niri.settings.debug = {
-  honor-xdg-activation-with-invalid-serial = true;
-};
+  programs.niri.settings.debug = {
+    honor-xdg-activation-with-invalid-serial = true;
+  };
   programs.niri.settings.prefer-no-csd = true;
   programs.niri.settings.environment = {
     QT_QPA_PLATFORM = "wayland";
