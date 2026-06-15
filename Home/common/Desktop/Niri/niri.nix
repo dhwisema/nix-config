@@ -31,7 +31,7 @@
     { command = [ "noctalia" ]; }
   ];
   programs.niri.settings.debug = {
-    honor-xdg-activation-with-invalid-serial = true;
+    honor-xdg-activation-with-invalid-serial = [];
   };
   programs.niri.settings.prefer-no-csd = true;
   programs.niri.settings.environment = {
