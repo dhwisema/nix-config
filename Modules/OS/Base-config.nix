@@ -57,6 +57,6 @@
     tailscale.enable = true; # tailscale
     tailscale.openFirewall = true;
   };
-
+  networking.firewall.checkReversePath = "loose";
   system.stateVersion = "26.05";
 }
