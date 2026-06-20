@@ -71,12 +71,30 @@
       "/data/jellyarr:/data"
     ];
   };
+  virtualisation.oci-containers.containers.sabnzbd = {
+    environment = {
+      PUID = "1001";
+      PGID = "1001";
+      UMASk = "002";
+      TZ = "America/Newyork";
+      WEBUI_PORTS = "8080/tcp";
+    };
+    hostname = "sabnzbd.internal";
+    image = ghcr.io/hotio/sabnzbd;
+    ports = ["9090:9090" "8080:8080"];
+    extraOptions = ["--pull=newer"];
+    volumes = [
+       "/data/jelyarr/usenet:/data/usenet:rw"
+       "/data/appdata/sabnzbd:/config"
+       "/etc/localtime:/etc/localtime:ro"
+      ];
+  };
   virtualisation.oci-containers.containers.qbittorrent = {
     environment = {
       PUID = "1001";
       PGID = "1001";
       UMASK = "002";
-      WEBUI_PORTS = "8080/tcp";
+      WEBUI_PORTS = "8081/tcp";
       LIBTORRENT = "v1";
       VPN_ENABLED = "true";
       VPN_CONF = "wg0";
@@ -94,7 +112,7 @@
 
     hostname = "qbittorrent";
     image = "ghcr.io/hotio/qbittorrent:latest";
-    ports = [ "8080:8080" ];
+    ports = [ "8081:8081" ];
     extraOptions = [ "--pull=newer" ];
 
     volumes = [
