@@ -80,7 +80,7 @@
       WEBUI_PORTS = "8080/tcp";
     };
     hostname = "sabnzbd.internal";
-    image = ghcr.io/hotio/sabnzbd;
+    image = "ghcr.io/hotio/sabnzbd";
     ports = ["9090:9090" "8080:8080"];
     extraOptions = ["--pull=newer"];
     volumes = [
