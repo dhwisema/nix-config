@@ -84,7 +84,7 @@
     ports = ["9090:9090" "8080:8080"];
     extraOptions = ["--pull=newer"];
     volumes = [
-       "/data/jelyarr/usenet:/data/usenet:rw"
+       "/data/jellyarr/usenet:/data/usenet:rw"
        "/data/appdata/sabnzbd:/config"
        "/etc/localtime:/etc/localtime:ro"
       ];
