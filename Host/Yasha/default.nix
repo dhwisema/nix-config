@@ -27,6 +27,7 @@
     fileSystems = [ "/" ];
   };
 
+  services.tailscale.useRoutingFeatures = "client";
   zramSwap.enable = true;
 
 }
