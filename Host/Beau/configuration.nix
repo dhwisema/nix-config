@@ -4,7 +4,7 @@
   ...
 }:
 {
-  boot.kernelPackages = pkgs.linuxPackages;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   systemd.services."systemd-suspend" = {
     serviceConfig = {
       Environment = ''"SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=false"'';
