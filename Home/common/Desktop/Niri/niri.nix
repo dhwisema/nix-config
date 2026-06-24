@@ -10,7 +10,7 @@
     # ./waybar.nix
     #./dms.nix
     # ./swaync.nix
-    #./swaylock.nix
+    ./swaylock.nix
     ./noctalia.nix
   ];
   #defining monitors for me niri
