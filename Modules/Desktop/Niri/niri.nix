@@ -57,7 +57,7 @@
   package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
   # Optional configuration
-  greeter-args = "--user greeter";
+  greeter-args = "--user irrelevancy";
   settings.cursor = {
     theme = "Adwaita";
     size = 24;
