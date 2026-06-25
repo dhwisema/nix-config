@@ -57,7 +57,7 @@
   package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
   # Optional configuration
-  greeter-args = "";
+  greeter-args = "--user greeter";
   settings.cursor = {
     theme = "Adwaita";
     size = 24;
@@ -69,9 +69,6 @@
     enable = true;
     restart = true;
     settings = {
-      terminal = {
-      vt = 2;
-    };
       # default_session = {
       #   command = "${pkgs.tuigreet}/bin/tuigreet --time --sessions /${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session --user-menu --window-padding 5 --asterisks --asterisks-char ^ --greeting '<~welcome~>' --theme 'button=yellow'";
       #   user = "greeter";
