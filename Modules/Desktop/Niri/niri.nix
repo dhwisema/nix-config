@@ -70,7 +70,7 @@
     restart = true;
     settings = {
       terminal = {
-      vt = "next";
+      vt = 2;
     };
       # default_session = {
       #   command = "${pkgs.tuigreet}/bin/tuigreet --time --sessions /${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session --user-menu --window-padding 5 --asterisks --asterisks-char ^ --greeting '<~welcome~>' --theme 'button=yellow'";
