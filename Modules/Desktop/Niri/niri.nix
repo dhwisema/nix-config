@@ -36,6 +36,7 @@
     nautilus
     nautilus-open-any-terminal
     wl-clipboard
+    cachix
   ];
   services.gvfs.enable = true;
 
