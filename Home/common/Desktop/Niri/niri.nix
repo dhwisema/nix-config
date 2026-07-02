@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  hostname,
   ...
 }:
 {
@@ -14,6 +15,7 @@
     ./noctalia.nix
   ];
   #defining monitors for me niri
+  if hostname == "Beau" then 
   programs.niri.settings.outputs."DP-1" = {
     position.x = 0;
     position.y = 0;
@@ -25,14 +27,14 @@
     position.y = 0;
   };
   programs.niri.settings.outputs."eDP-1" = {
+    position.x = 0;
+    position.y = 0;
+  };
+  programs.niri.settings.outputs."Dell Inc. DELL P2725H 41NV684" = {
     position.x = -1920;
     position.y = 0;
   };
-  programs.niri.settings.outputs."DP-9" = {
-    position.x = -1920;
-    position.y = 0;
-  };
-  programs.niri.settings.outputs."DP-10" = {
+  programs.niri.settings.outputs."Dell Inc. DELL P2725H FNRH784" = {
     position.x = 1920;
     position.y = 0;
   };
