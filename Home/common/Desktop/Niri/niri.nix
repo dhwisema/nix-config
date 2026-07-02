@@ -24,6 +24,18 @@
     position.x = -1920;
     position.y = 0;
   };
+  programs.niri.settings.outputs."eDP-1" = {
+    position.x = -1920;
+    position.y = 0;
+  };
+  programs.niri.settings.outputs."DP-9" = {
+    position.x = -1920;
+    position.y = 0;
+  };
+  programs.niri.settings.outputs."DP-10" = {
+    position.x = 1920;
+    position.y = 0;
+  };
 
   stylix.targets.niri.enable = true;
   programs.niri.settings.spawn-at-startup = [
