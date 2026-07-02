@@ -14,8 +14,7 @@
     ./swaylock.nix
     ./noctalia.nix
   ];
-  #defining monitors for me niri
-  if hostname == "Beau" then 
+  #defining monitors for me niri 
   programs.niri.settings.outputs."DP-1" = {
     position.x = 0;
     position.y = 0;
