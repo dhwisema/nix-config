@@ -1,4 +1,4 @@
-{inputs, pkgs, config}:let
+{inputs, pkgs, config,...}:let
   comin = config.services.comin.package;
   ripgrep = pkgs.ripgrep;
   coreutils = pkgs.coreutils;
