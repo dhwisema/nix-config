@@ -64,6 +64,7 @@
               [
                 ./Modules/OS/Base-config.nix
                 comin.nixosModules.comin
+                ./Modules/OS/comin.nix
                 ({
                   services.comin = {
                     enable = true;
