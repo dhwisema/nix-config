@@ -4,7 +4,7 @@
   ...
 }:
 {
-
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
   services.tlp.enable = pkgs.lib.mkForce false;
 
   services.fprintd = {
