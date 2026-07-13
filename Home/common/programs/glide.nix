@@ -16,7 +16,6 @@
         name = "profile_0"; # name as listed in about:profiles
         isDefault = true; # can be omitted; true if profile ID is 0
         userChrome = ''
-
           #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
             opacity: 0;
             pointer-events: none;
