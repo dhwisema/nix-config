@@ -4,8 +4,7 @@
   lib,
   ...
 }:
-{
-
+{imports = [inputs.glide-browser.homeManagerModules.glide];
   home.packages = with pkgs; [
     onlyoffice-desktopeditors
     distrobox-tui
