@@ -120,7 +120,7 @@
     ];
     "Mod+T".action.spawn = "ghostty";
     "Mod+D".action.spawn = "vesktop";
-    "Mod+B".action.spawn = "firefox";
+    "Mod+B".action.spawn = "glide";
     "Mod+E".action.spawn = "dolphin";
     "Mod+Space".action.spawn = [
       "vicinae"
