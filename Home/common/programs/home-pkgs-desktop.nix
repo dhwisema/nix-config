@@ -36,7 +36,7 @@
     # mqttmultimeter
     # esptool
   ];
-  programs.glide-browser.enable = true;
+  programs.glide.enable = true;
 
   programs.zellij = {
     enable = true;
