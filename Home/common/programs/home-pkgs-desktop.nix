@@ -23,8 +23,8 @@
     obsidian
     nixd
     zoxide
-    jujutsu
     devenv
+    
     # ltspice
     # picocom
     # wireshark
@@ -36,6 +36,7 @@
     # mqttmultimeter
     # esptool
   ];
+  programs.glide-browser.enable = true;
 
   programs.zellij = {
     enable = true;
