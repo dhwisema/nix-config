@@ -43,6 +43,11 @@
       url = "github:vicinaehq/extensions";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    glide-browser = {    url = "github:glide-browser/glide.nix";
+    # optionally: follow your flake's inputs
+    inputs.nixpkgs.follows = "nixpkgs";
+    inputs.home-manager.follows = "home-manager";
+  };
   };
   outputs =
     inputs:
