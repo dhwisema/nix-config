@@ -1,4 +1,10 @@
-{inputs, pkgs, config,...}:let
+{
+  inputs,
+  pkgs,
+  config,
+  ...
+}:
+let
   comin = config.services.comin.package;
   ripgrep = pkgs.ripgrep;
   coreutils = pkgs.coreutils;
@@ -17,5 +23,5 @@
   rebootScript = "${rebootScriptDerivation}/bin/${script-name}";
 in
 {
- services.comin.postDeploymentCommand = rebootScript;
+  services.comin.postDeploymentCommand = rebootScript;
 }

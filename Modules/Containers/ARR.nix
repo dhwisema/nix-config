@@ -81,13 +81,16 @@
     };
     hostname = "sabnzbd.internal";
     image = "ghcr.io/hotio/sabnzbd";
-    ports = ["9090:9090" "8080:8080"];
-    extraOptions = ["--pull=newer"];
+    ports = [
+      "9090:9090"
+      "8080:8080"
+    ];
+    extraOptions = [ "--pull=newer" ];
     volumes = [
-       "/data/jellyarr/usenet:/data/usenet:rw"
-       "/data/appdata/sabnzbd:/config"
-       "/etc/localtime:/etc/localtime:ro"
-      ];
+      "/data/jellyarr/usenet:/data/usenet:rw"
+      "/data/appdata/sabnzbd:/config"
+      "/etc/localtime:/etc/localtime:ro"
+    ];
   };
   virtualisation.oci-containers.containers.qbittorrent = {
     environment = {

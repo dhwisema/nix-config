@@ -21,9 +21,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     noctalia-greeter = {
-    url = "github:noctalia-dev/noctalia-greeter";
-    inputs.nixpkgs.follows = "nixpkgs";
-  };
+      url = "github:noctalia-dev/noctalia-greeter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     waveforms.url = "github:liff/waveforms-flake";
     agenix = {
       url = "github:ryantm/agenix";
@@ -43,11 +43,12 @@
       url = "github:vicinaehq/extensions";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    glide-browser = {    url = "github:glide-browser/glide.nix";
-    # optionally: follow your flake's inputs
-    inputs.nixpkgs.follows = "nixpkgs";
-    inputs.home-manager.follows = "home-manager";
-  };
+    glide-browser = {
+      url = "github:glide-browser/glide.nix";
+      # optionally: follow your flake's inputs
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
   outputs =
     inputs:
@@ -90,11 +91,11 @@
                 nix-flatpak.nixosModules.nix-flatpak
                 stylix.nixosModules.stylix
                 niri.nixosModules.niri
-               # waveforms.nixosModule
-               # ({ users.users.${username}.extraGroups = [ "plugdev" ]; })
+                # waveforms.nixosModule
+                # ({ users.users.${username}.extraGroups = [ "plugdev" ]; })
                 nixos-hardware.nixosModules.common-cpu-amd # sets scheduling things for kernel
                 nixos-hardware.nixosModules.common-pc-ssd # ssd trim
-                noctalia-greeter.nixosModules.default 
+                noctalia-greeter.nixosModules.default
               ];
 
           diskopath = ./. + "/Host/${hostname}/disk-config.nix";
