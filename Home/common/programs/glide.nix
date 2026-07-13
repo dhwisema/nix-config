@@ -1,3 +1,3 @@
 {inputs,config,pkgs,...}:{
- home.packages = [inputs.glide.packages.${pkgs.system}.default];
+ home.packages = [inputs.glide-browser.packages.${pkgs.system}.default];
 }
