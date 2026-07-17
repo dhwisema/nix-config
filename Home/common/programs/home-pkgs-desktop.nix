@@ -24,7 +24,7 @@
     nixd
     zoxide
     devenv
-    webcord-webcord-vencord
+    webcord-vencord
 
     # ltspice
     # picocom
