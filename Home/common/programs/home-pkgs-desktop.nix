@@ -12,7 +12,7 @@
     distrobox # dont need this currently will reneable if i have to use code composer again.i
     smplayer
     foliate
-    vesktop
+    #vesktop
     ghostty
     nixfmt
     nixfmt-tree
@@ -24,6 +24,7 @@
     nixd
     zoxide
     devenv
+    webcord-webcord-vencord
 
     # ltspice
     # picocom
