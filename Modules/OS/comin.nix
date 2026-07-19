@@ -24,18 +24,16 @@ let
 in
 {
 
-  
-                
-                  services.comin = {
-                    enable = true;
-                    remotes = [
-                      {
-                        name = "origin";
-                        url = "https://github.com/dhwisema/nix-config.git";
-                        branches.main.name = "main";
-                      }
-                    ];
-                    postDeploymentCommand = rebootScript;
-                  };
-              
+  services.comin = {
+    enable = true;
+    remotes = [
+      {
+        name = "origin";
+        url = "https://github.com/dhwisema/nix-config.git";
+        branches.main.name = "main";
+      }
+    ];
+    postDeploymentCommand = rebootScript;
+  };
+
 }
