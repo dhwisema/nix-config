@@ -35,7 +35,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     comin = {
-      url = "github:nlewo/comin";
+      url = "github:Aehmlo/comin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
@@ -71,19 +71,6 @@
                 ./Modules/OS/Base-config.nix
                 comin.nixosModules.comin
                 ./Modules/OS/comin.nix
-                ({
-                  services.comin = {
-                    enable = true;
-                    remotes = [
-                      {
-                        name = "origin";
-                        url = "https://github.com/dhwisema/nix-config.git";
-                        branches.main.name = "main";
-                      }
-                    ];
-                  };
-                })
-
               ]
             else
               [

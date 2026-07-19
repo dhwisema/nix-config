@@ -23,5 +23,19 @@ let
   rebootScript = "${rebootScriptDerivation}/bin/${script-name}";
 in
 {
-  services.comin.postDeploymentCommand = rebootScript;
+
+  
+                
+                  services.comin = {
+                    enable = true;
+                    remotes = [
+                      {
+                        name = "origin";
+                        url = "https://github.com/dhwisema/nix-config.git";
+                        branches.main.name = "main";
+                      }
+                    ];
+                    postDeploymentCommand = rebootScript;
+                  };
+              
 }
